@@ -27,7 +27,7 @@ Designen är framtagen i Figma och går att se här: [Designskiss i Figma](https
 
 Om något är oklart eller om ni behöver feedback är det bara att höra av sig – vi hjälper gärna till!
 
-## About the Design ✨
+## Om designen ✨
 I utformningen av vårt projekt har vi fokuserat på att skapa en enkel, harmonisk och användarvänlig design som speglar varumärkets identitet. Våra designval grundar sig i följande principer:
 ### 🎨 Färgval
 Vi har valt en naturnära färgpalett inspirerad av skogen för att skapa en lugn och inbjudande känsla. Jordnära toner som dämpade gröna och varma bruna färger ger en autentisk koppling till naturen.
