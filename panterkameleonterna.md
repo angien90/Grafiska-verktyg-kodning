@@ -66,7 +66,7 @@ chore Miscellaneous commits e.g. modifying .gitignore
 
 Hur vi skapar branches= 
 
-## skapa branches 
+## Skapa branches 
 
 Använd passande prefix och beskriv branchens funktion 
 
