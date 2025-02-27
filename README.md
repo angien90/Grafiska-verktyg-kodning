@@ -9,7 +9,7 @@ För att skapa en enhetlig design följer vi dessa riktlinjer:
 - **Typsnitt:** Vi använder Lilita One för rubriker (alltid med versaler) och Assistant för brödtext. Båda finns att hämta via Google Fonts.
 - **Knappar:** Alla knappar är 150x45px oavsett skärmstorlek. I Figma finns knappar i olika lägen: normal, hover, clicked och disabled.
 - **Hamburgermeny:** Menyn som endast visas i mobilt läge är 80% av skärmens bredd.
-- **Bilder:** Alla bilder finns i assets-mappen i projektets repository.
+- **Bilder:** Alla bilder finns i assets-mappen i projektets repository. Bildernas filstorlekar är ganska stora, ni kan behöva spara om dom i mindre filstorlek. Feel free att döpa om dom också om ni känner för det.
 - **Logotyp:** Logotypen finns som SVG-fil i assets-mappen. Vi uppmuntrar till att animera logotypen, gärna genom att låta månen röra sig eller skifta form till en sol. Om det känns svårt är det fritt att välja valfri enkel animation.
 - **Cookies:** Vi har gjort en egen frame i Figma för cookie-texten i alla lägen. Endast designen i den framen gäller – det är inget mått som behöver dubbelkollas där.
 Designen finns i Figma och går att se här: Designskiss i Figma.
