@@ -23,7 +23,8 @@ Inputfält för e-postadress
 Logotyp
 **Flexibilitet:** Det är fritt att justera storlek på bilder och andra element så att layouten anpassar sig efter skärmstorleken – så länge designkänslan bevaras.
   
-Designen är framtagen i Figma och går att se här: Designskiss i Figma.
+Designen är framtagen i Figma och går att se här: [Designskiss i Figma](https://www.figma.com/design/G2sEeffHFoKmBFZt3ynyEa/Panterkameleonterna?node-id=31-58&t=KNNzkBJ9OIN659ld-1)
+
 Om något är oklart eller om ni behöver feedback är det bara att höra av sig – vi hjälper gärna till!
 
 ## About the Design ✨
