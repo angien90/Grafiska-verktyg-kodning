@@ -1,30 +1,51 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue';
-</script>
-
 <template>
   <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+    <nav>
+      <router-link to="/">Hem</router-link> |
+      <router-link to="/about">Om oss</router-link>
+    </nav>
+
+    <router-view></router-view>
+
+    <h1>HOLA!</h1>
+
+    <span>
+      <h3>Följ stigen till lugnet - Gläntan väntar!</h3>
+      <p>Djupt inne i den svenska skogen, vid en spegelblank sjö, ligger Gläntan – en plats för stillhet, återhämtning och upplevelser i naturens rytm. Här bor du i trädkojor svävande bland grenarna, vattengömslen vid sjöns kant eller glashus där natthimlen blir din utsikt.</p>
+      <p>Låt vinden viska genom trädkronorna medan du slappnar av på din privata terrass. Vakna till ljudet av fågelsång och känn doften av nyskog. Här finns inga distraktioner, ingen stress – bara du, naturen och lugnet.</p>
+    </span>
+
+    <img :src="imagePath" alt="Modernt hus ute i skogen" width="500" height="500">
+
+    <span>
+      <h3>Prenumerera på vårt nyhetsbrev</h3>
+      <form>
+        <label for="epost">Mailadress</label><br>
+        <input type="email" id="epost" name="epost">
+        <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+        <label for="newsletter"> Ja tack! Jag vill få nyhetsbrev från Gläntan med unika erbjudanden och inspiration om naturupplevelser.</label>
+      </form>
+    </span>
   </div>
-  <HelloWorld msg="Vite + Vue" />
 </template>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+<script setup>
+import imagePath from './assets/images/hus-startsida.jpg';
+</script>
+
+<style>
+nav {
+  display: flex;
+  gap: 15px;
+  font-size: 18px;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+
+h1 {
+  color: #4caf50;
 }
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+
+span {
+  display: block;
+  margin: 20px 0;
 }
 </style>
