@@ -1,9 +1,6 @@
 <script setup>
 import { ref } from 'vue';
 import HomeView from './views/HomeView.vue';
-
-import NewsletterPrenumeration from './components/NewsletterPrenumeration.vue';
-import PageInformation from './components/PageInformation.vue';
 </script>
 
 <template>
@@ -15,11 +12,7 @@ import PageInformation from './components/PageInformation.vue';
 
     <main>
       <router-view />
-    </main>
-
-    <h1>HOLA!</h1>
-    <PageInformation />
-    <NewsletterPrenumeration />
+    </main>   
   </div>
 </template>
 
