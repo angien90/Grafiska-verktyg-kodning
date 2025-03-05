@@ -34,6 +34,5 @@ h1 {
 
 span {
   display: block;
-  margin: 20px 0;
 }
 </style>
