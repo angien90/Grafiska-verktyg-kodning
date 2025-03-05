@@ -9,7 +9,7 @@ defineProps({
     <button class="custom-button">{{ buttonText }}</button>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 .button-container {
   display: flex;
   justify-content: center;

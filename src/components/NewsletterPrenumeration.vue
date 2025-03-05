@@ -1,10 +1,10 @@
 <script>
-import SecondaryButton from './SecondaryButton.vue';
+import PrimaryButton from './PrimaryButton.vue';
 import { ref } from 'vue';
 
 export default {
   components: {
-    SecondaryButton
+    PrimaryButton
   }
 };
 
@@ -13,52 +13,56 @@ const isSubscribed = ref(false);
 </script>
 
 <template>
-	<span>
+	<div>
 		<h3>Prenumerera på vårt nyhetsbrev</h3>
 		<form>
-			<span class="form">
+			<span class="form-1">
 				<label class="epost" for="epost">Mailadress</label><br>
 				<input class="input" type="email" id="epost" name="epost" v-model="email">
 			</span>
 
-			<span class="form">
+			<span class="form-2">
 				<input class="checkbox" type="checkbox" id="newsletter" name="newsletter" v-model="isSubscribed">
-				<label for="newsletter"> Ja tack! Jag vill få nyhetsbrev från Gläntan med unika erbjudanden och inspiration om naturupplevelser.</label>
+				<label class="newsletter-information" for="newsletter"> Ja tack! Jag vill få nyhetsbrev från Gläntan med unika erbjudanden och inspiration om naturupplevelser.</label>
 			</span>
+
+			<PrimaryButton buttonText="Prenumerera" />
 		</form>
-		<SecondaryButton buttonText="Prenumerera" />
-	</span>
+		
+	</div>
 </template>
 
-<style scoped>
-span {
-	background-color: #AD9072;
-	padding-top: 25px;
-	padding-bottom: 25px;
-	padding-left: 15px;
-	padding-right: 15px;
-
+<style lang="scss" scoped>
+div {
+	background-color: $greige;
+	padding-top: $spacing;
+	padding-bottom: 5px;
+	padding-left: $spacing;
+	padding-right: $spacing;
+	margin-bottom: $spacing;
 }
 
 h3 {
-	font-size: 32px;
+	font-family: $heading-font;
+	font-size: 2rem;
 	margin-top: 0;
-	margin-bottom: 25px;
+	margin-bottom: $spacing;
 	text-transform: uppercase;
-
+	text-align: center;
 }
 
-.form {
-	padding-left: 0;
+.form-1 {
+	padding-left: 10px;
 	padding-right: 0;
 	padding-top: 0;
-	padding-bottom: 25px;
+	padding-bottom: $spacing;
 	text-align: left;	
 }
 
 .epost {
+	font-family: $heading-font;
 	text-align: start;
-	font-size: 25px;
+	font-size: $spacing;
 	text-transform: uppercase;
 	width: 100%;
 	padding-left: 10px;
@@ -66,21 +70,38 @@ h3 {
 
 .input {
 	height: 40px;
-	border-color: #E9E2CF;
+	border-color: $sand;
 	border-radius: 15px;
-	width: 98%;
-	background-color: #E9E2CF;
-	
+	width: 100%;
+	background-color: $sand;	
+}
+
+.form-2 {
+	display: flex;
+	align-items: start; 
+	gap: 10px;
+	padding-top: $spacing;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 .checkbox {
-  appearance: none;
-  -webkit-appearance: none; /* För Safari */
-  -moz-appearance: none;
-  width: 20px;
-  height: 20px;
-  background-color: #E9E2CF; 
-  cursor: pointer;
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	width: 60px;
+	height: 20px;
+	background-color: $sand;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.newsletter-information {
+	font-family: $body-font;
+	font-size: 1.1rem;
+	line-height: 1.4;
 }
 
 </style>
