@@ -1,4 +1,5 @@
 <script>
+import SecondaryButton from '/src/components/SecondaryButton.vue';
 import { ref } from 'vue';
 
 const email = ref('');
@@ -17,6 +18,7 @@ const isSubscribed = ref(false);
 			<span class="form">
 				<input class="checkbox" type="checkbox" id="newsletter" name="newsletter" v-model="isSubscribed">
 				<label for="newsletter"> Ja tack! Jag vill få nyhetsbrev från Gläntan med unika erbjudanden och inspiration om naturupplevelser.</label>
+			<SecondaryButton />
 			</span>
 		</form>
 	</span>
