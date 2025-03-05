@@ -1,30 +1,40 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue';
+import { ref } from 'vue';
+import HomeView from './views/HomeView.vue';
+
+import NewsletterPrenumeration from './components/NewsletterPrenumeration.vue';
+import PageInformation from './components/PageInformation.vue';
 </script>
 
 <template>
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+  <div id="app">
+    <nav>
+      <router-link to="/">Hem</router-link> |
+      <router-link to="/about">Om oss</router-link>
+    </nav>
+
+    <main>
+      <router-view />
+    </main>
+
+    <h1>HOLA!</h1>
+    <PageInformation />
+    <NewsletterPrenumeration />
   </div>
-  <HelloWorld msg="Vite + Vue" />
 </template>
 
 <style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+nav {
+  display: flex;
+  gap: 15px;
+  font-size: 18px;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+
+h1 {
+  color: #4caf50;
 }
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+
+span {
+  display: block;
 }
 </style>
