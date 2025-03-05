@@ -1,74 +1,72 @@
 /* Function */
 @function pxtorem($px) {
-    @return $px / 16px * 1rem;
+  @return $px / 16px * 1rem;
 }
 
 /* Primary colors */
-$sand: #E9E2CF;
-$skogsgron: #465C3E;
-$greige: #AD9072;
+$sand: #e9e2cf;
+$skogsgron: #465c3e;
+$greige: #ad9072;
 
 /*Secondary color*/
-$tradstam: #96612E;
+$tradstam: #96612e;
 
 /* Hover colors */
-$lovgron: #707E43;
-$morkbrun: #5A3B1F;
+$lovgron: #707e43;
+$morkbrun: #5a3b1f;
 
 /* Fonts */
-$heading-font: "Lilita One", sans-serif;
-$body-font: "Assistant", sans-serif;
+$heading-font: 'Lilita One', sans-serif;
+$body-font: 'Assistant', sans-serif;
 
 /* Default spacing */
 $spacing: 25px;
 
 /* Buttons */
 @mixin primary-button {
-    cursor: pointer;
-    width: 150px;
-    min-height: 45px;
-    border: none;
-    border-radius: 7px;
-    background-color: $skogsgron;
-    text-align: center;
-    color: white;
-    font-family: $body-font;
-    font-weight: bold;
-    font-size: 16px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  width: 150px;
+  min-height: 45px;
+  border: none;
+  border-radius: 7px;
+  background-color: $skogsgron;
+  text-align: center;
+  color: white;
+  font-family: $body-font;
+  font-weight: bold;
+  font-size: pxtorem(16px);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
 
-    &:hover {
-        background-color: $lovgron;
-    }
-    
-    &:active {
-        box-shadow: none;
-        transform: translateY(2px);
-    }
+  &:hover {
+    background-color: $lovgron;
+  }
+
+  &:active {
+    box-shadow: none;
+    transform: translateY(2px);
+  }
 }
 
 @mixin secondary-button {
-    cursor: pointer;
-    width: 150px;
-    min-height: 45px;
-    border: none;
-    border-radius: 7px;
-    background-color: $tradstam;
-    text-align: center;
-    color: white;
-    font-family: $body-font;
-    font-weight: bold;
-    font-size: 16px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  width: 150px;
+  min-height: 45px;
+  border: none;
+  border-radius: 7px;
+  background-color: $tradstam;
+  text-align: center;
+  color: white;
+  font-family: $body-font;
+  font-weight: bold;
+  font-size: pxtorem(16px);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
 
-    &:hover {
-        background-color: $morkbrun;
-    }
-    
-    &:active {
-        box-shadow: none;
-        transform: translateY(2px);
-    }
+  &:hover {
+    background-color: $morkbrun;
+  }
+
+  &:active {
+    box-shadow: none;
+    transform: translateY(2px);
+  }
 }
-
-/* Links */
