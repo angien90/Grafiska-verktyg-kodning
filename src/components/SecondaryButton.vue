@@ -1,16 +1,22 @@
 <script setup>
-import { ref } from 'vue';
+defineProps({
+  buttonText: String
+});
 
-const isDisabled = ref(false);
 </script>
 
 <template>
-    <button class="custom-button" :disabled="isDisabled">
-        Klicka här
-    </button>
+    <button class="custom-button">{{ buttonText }}</button>
 </template>
 
 <style scoped>
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 .custom-button {
   width: 150px;
   height: 45px;
