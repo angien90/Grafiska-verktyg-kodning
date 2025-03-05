@@ -1,16 +1,40 @@
-<script setup lang="js">
+<script setup>
+import { ref } from 'vue';
 import HomeView from './views/HomeView.vue';
+
+import NewsletterPrenumeration from './components/NewsletterPrenumeration.vue';
+import PageInformation from './components/PageInformation.vue';
 </script>
 
 <template>
-  <nav>
-    <router-link to="/">Hem</router-link> |
-    <router-link to="/about">Om oss</router-link>
-  </nav>
+  <div id="app">
+    <nav>
+      <router-link to="/">Hem</router-link> |
+      <router-link to="/about">Om oss</router-link>
+    </nav>
 
-  <main>
-  <router-view></router-view>
-</main>
+    <main>
+      <router-view />
+    </main>
+
+    <h1>HOLA!</h1>
+    <PageInformation />
+    <NewsletterPrenumeration />
+  </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+nav {
+  display: flex;
+  gap: 15px;
+  font-size: 18px;
+}
+
+h1 {
+  color: #4caf50;
+}
+
+span {
+  display: block;
+}
+</style>
