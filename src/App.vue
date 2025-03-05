@@ -8,7 +8,9 @@ import HomeView from './views/HomeView.vue';
     <router-link to="/about">Om oss</router-link>
   </nav>
 
+  <main>
   <router-view></router-view>
+</main>
 </template>
 
 <style scoped></style>
