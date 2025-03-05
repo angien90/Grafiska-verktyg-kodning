@@ -1,5 +1,11 @@
+<script setup>
+import BookingCards from '../components/BookingCards.vue';
+</script>
+
 <template>
-    <div>
-      <h1>Om oss</h1>
-    </div>
-  </template>
+  <div>
+    <BookingCards />
+  </div>
+</template>
+
+<style scoped></style>

@@ -1,5 +1,7 @@
 <script setup>
 import { ref } from 'vue';
+import HomeView from './views/HomeView.vue';
+
 import NewsletterPrenumeration from './components/NewsletterPrenumeration.vue';
 import PageInformation from './components/PageInformation.vue';
 </script>
@@ -21,7 +23,7 @@ import PageInformation from './components/PageInformation.vue';
   </div>
 </template>
 
-<style>
+<style scoped>
 nav {
   display: flex;
   gap: 15px;
