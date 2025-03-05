@@ -78,5 +78,4 @@ img{
 .infotext{
   width: 290px;
 }
-
 </style>
