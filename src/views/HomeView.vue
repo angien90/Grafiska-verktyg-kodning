@@ -1,11 +1,6 @@
 <template>
   <div>
-    <nav>
-      <router-link to="/">Hem</router-link> |
-      <router-link to="/about">Om oss</router-link>
-    </nav>
 
-    <router-view></router-view>
 
     <h1>HOLA!</h1>
 
