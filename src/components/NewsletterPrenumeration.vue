@@ -66,6 +66,7 @@ h3 {
 
 .input {
 	height: 40px;
+	border-color: #E9E2CF;
 	border-radius: 15px;
 	width: 98%;
 	background-color: #E9E2CF;
