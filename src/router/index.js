@@ -4,12 +4,12 @@ import AboutView from '../views/AboutView.vue';
 
 const routes = [
   { path: '/', component: HomeView },
-  { path: '/about', component: AboutView }
+  { path: '/about', component: AboutView },
 ];
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
-  routes
+  routes,
 });
 
 export default router;
