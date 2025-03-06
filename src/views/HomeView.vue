@@ -1,6 +1,7 @@
 <script setup>
 import NewsletterPrenumeration from '../components/NewsletterPrenumeration.vue';
 import PageInformation from '../components/PageInformation.vue';
+import CookieBar from '../components/CookieBar.vue';
 </script>
 
 <template>
@@ -8,6 +9,7 @@ import PageInformation from '../components/PageInformation.vue';
     <main>
       <PageInformation />
       <NewsletterPrenumeration />
+      <CookieBar />
     </main>
 
 </template>
@@ -21,4 +23,5 @@ main {
   display: flex;
   flex-direction: column;
 }
+
 </style>
