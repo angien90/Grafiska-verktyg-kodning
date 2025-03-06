@@ -11,6 +11,6 @@ defineProps({
 
 <style lang="scss" scoped>
 .primary-button {
-  @include primary-button; // Använder mixinen här!
+  @include primary-button;
 }
 </style>
