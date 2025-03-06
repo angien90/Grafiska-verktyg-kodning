@@ -5,7 +5,8 @@ defineProps({
 </script>
 
 <template>
-<svg class="logo" xmlns="http://www.w3.org/2000/svg" xmlns:v="https://svgstorm.com"
+<svg class="logo" role="img" aria-label="Gläntans logga"
+xmlns="http://www.w3.org/2000/svg" xmlns:v="https://svgstorm.com"
 viewBox = "0 0 500 500"
 width="500"
 height="500">
@@ -2085,5 +2086,21 @@ C 243.52 490.69 253.41 490.64 260.00 489.00 Z"/>
 .logo {
     width: 50px;
     height: auto;
+
+    path {
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  animation: draw 2s ease-out forwards;
 }
+}
+
+@keyframes draw {
+  0% {
+    stroke-dashoffset: 500;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
 </style>

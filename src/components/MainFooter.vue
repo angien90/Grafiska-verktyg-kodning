@@ -18,9 +18,14 @@ import MainLogo from '@/components/MainLogo.vue';
           src="@/assets/images/instagram-icon.svg"
           width="25px"
           height="25px"
-          alt="Social media icon for Instagram"
+          alt="Sociala medier ikon för Instagram"
         />
-        <img src="@/assets/images/facebook-icon.svg" width="25px" height="25px" alt="Social media icon for Facebook" />
+        <img
+          src="@/assets/images/facebook-icon.svg"
+          width="25px"
+          height="25px"
+          alt="Sociala medier ikon för Facebook"
+        />
       </div>
     </div>
   </footer>
@@ -42,6 +47,7 @@ footer {
 }
 
 .footer-logo {
+  cursor: pointer;
   display: flex;
   gap: 15px;
 
