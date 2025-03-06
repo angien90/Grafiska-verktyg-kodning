@@ -1,11 +1,11 @@
 <script>
-import SecondaryButton from './SecondaryButton.vue';
+import PrimaryButton from './PrimaryButton.vue';
 import { ref } from 'vue';
 
 export default {
   components: {
-    SecondaryButton,
-  },
+    PrimaryButton
+  }
 };
 
 const email = ref('');
@@ -13,72 +13,107 @@ const isSubscribed = ref(false);
 </script>
 
 <template>
-  <span>
-    <h3>Prenumerera på vårt nyhetsbrev</h3>
-    <form>
-      <span class="form">
-        <label class="epost" for="epost">Mailadress</label><br />
-        <input class="input" type="email" id="epost" name="epost" v-model="email" />
-      </span>
+	<div>
+		<h3>Prenumerera på vårt nyhetsbrev</h3>
+		<form>
+			<span class="form-1">
+				<label class="epost" for="epost">Mailadress</label><br>
+				<input class="input" type="email" id="epost" name="epost" v-model="email">
+			</span>
 
-      <span class="form">
-        <input class="checkbox" type="checkbox" id="newsletter" name="newsletter" v-model="isSubscribed" />
-        <label for="newsletter">
-          Ja tack! Jag vill få nyhetsbrev från Gläntan med unika erbjudanden och inspiration om naturupplevelser.</label
-        >
-      </span>
-    </form>
-    <SecondaryButton buttonText="Prenumerera" />
-  </span>
+			<span class="form-2">
+				<input class="checkbox" type="checkbox" id="newsletter" name="newsletter" v-model="isSubscribed">
+				<label class="newsletter-information" for="newsletter"> Ja tack! Jag vill få nyhetsbrev från Gläntan med unika erbjudanden och inspiration om naturupplevelser.</label>
+			</span>
+
+			<PrimaryButton buttonText="Prenumerera" />
+		</form>
+		
+	</div>
 </template>
 
-<style scoped>
-span {
-  background-color: #ad9072;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  padding-left: 15px;
-  padding-right: 15px;
+<style lang="scss" scoped>
+div {
+	background-color: $greige;
+	padding-top: $spacing;
+	padding-bottom: 5px;
+	padding-left: $spacing;
+	padding-right: $spacing;
+	margin-bottom: $spacing;
 }
 
 h3 {
-  font-size: 32px;
-  margin-top: 0;
-  margin-bottom: 25px;
-  text-transform: uppercase;
+	font-family: $heading-font;
+	font-size: 2rem;
+	margin-top: 0;
+	margin-bottom: $spacing;
+	text-transform: uppercase;
+	text-align: center;
 }
 
-.form {
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  padding-bottom: 25px;
-  text-align: left;
+.form-1 {
+	padding-left: 10px;
+	padding-right: 0;
+	padding-top: 0;
+	padding-bottom: $spacing;
+	text-align: left;	
 }
 
 .epost {
-  text-align: start;
-  font-size: 25px;
-  text-transform: uppercase;
-  width: 100%;
-  padding-left: 10px;
+	font-family: $heading-font;
+	text-align: start;
+	font-size: $spacing;
+	text-transform: uppercase;
+	width: 100%;
+	padding-left: 10px;
 }
 
 .input {
-  height: 40px;
-  border-color: #e9e2cf;
-  border-radius: 15px;
-  width: 98%;
-  background-color: #e9e2cf;
+	height: 40px;
+	border-color: $sand;
+	border-radius: 15px;
+	width: 100%;
+	background-color: $sand;	
+}
+
+.form-2 {
+	display: flex;
+	align-items: start; 
+	gap: 10px;
+	padding-top: $spacing;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 .checkbox {
-  appearance: none;
-  -webkit-appearance: none; /* För Safari */
-  -moz-appearance: none;
-  width: 20px;
-  height: 20px;
-  background-color: #e9e2cf;
-  cursor: pointer;
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	width: 20px;
+	height: 20px;
+	background-color: $sand;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
 }
+
+.checkbox:checked::after {
+	content: '✔';
+	font-size: 18px;
+	color: #333;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.newsletter-information {
+	font-family: $body-font;
+	font-size: 1.1rem;
+	line-height: 1.4;
+	flex: 1;
+}
+
 </style>

@@ -1,55 +1,43 @@
 <script setup>
-import SecondaryButton from './SecondaryButton.vue';
+import PrimaryButton from './PrimaryButton.vue';
 import imagePath from '/src/assets/images/hus-startsida.jpg';
 </script>
 
 <template>
-  <span>
-    <h3>Följ stigen till lugnet - Gläntan väntar!</h3>
-    <p>
-      Djupt inne i den svenska skogen, vid en spegelblank sjö, ligger Gläntan – en plats för stillhet, återhämtning och
-      upplevelser i naturens rytm. Här bor du i trädkojor svävande bland grenarna, vattengömslen vid sjöns kant eller
-      glashus där natthimlen blir din utsikt.
-    </p>
-    <p>
-      Låt vinden viska genom trädkronorna medan du slappnar av på din privata terrass. Vakna till ljudet av fågelsång
-      och känn doften av nyskog. Här finns inga distraktioner, ingen stress – bara du, naturen och lugnet.
-    </p>
+	<h3>Följ stigen till lugnet - Gläntan väntar!</h3>
+	<p>Djupt inne i den svenska skogen, vid en spegelblank sjö, ligger Gläntan – en plats för stillhet, återhämtning och upplevelser i naturens rytm. Här bor du i trädkojor svävande bland grenarna, vattengömslen vid sjöns kant eller glashus där natthimlen blir din utsikt.</p>
+	<br>	
+	<p>Låt vinden viska genom trädkronorna medan du slappnar av på din privata terrass. Vakna till ljudet av fågelsång och känn doften av nyskog. Här finns inga distraktioner, ingen stress – bara du, naturen och lugnet.</p>
 
-    <SecondaryButton buttonText="Boka rum" />
+	<PrimaryButton buttonText="Boka rum" @click="$router.push('/about')" />
 
-    <img :src="imagePath" alt="Modernt hus ute i skogen" width="500" height="500" />
-  </span>
+	<img :src="imagePath" alt="Modernt hus ute i skogen" width="500" height="500">
 </template>
 
-<style scoped>
-span {
-  background-color: #e9e2cf;
-  padding-top: 25px;
-  padding-bottom: 25px;
-}
+<style lang="scss" scoped>
 
 h3 {
-  font-size: 32px;
-  margin-top: 0;
-  margin-bottom: 25px;
-  text-transform: uppercase;
-  padding-left: 25px;
-  padding-right: 25px;
+	font-family: $heading-font;
+	font-size: 2rem;
+	margin-bottom: $spacing;
+	text-transform: uppercase;
+	padding-top: $spacing;
+	padding-left: $spacing;
+	padding-right: $spacing;
 }
 
 p {
-  font-size: 16px;
-  margin-top: 0;
-  margin-bottom: 25px;
-  text-align: start;
-  padding-left: 25px;
-  padding-right: 25px;
+	font-family: $body-font;
+	font-size: 1rem;
+	margin-top: 0;
+	text-align: start;
+	padding-left: $spacing;
+	padding-right: $spacing;
 }
 
 img {
-  width: 100%;
-  height: auto;
-  margin-top: 25px;
+	width: 100%;
+	height: auto;
+	margin-bottom: $spacing;
 }
 </style>
