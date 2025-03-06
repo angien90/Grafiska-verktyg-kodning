@@ -4,7 +4,7 @@
       <div class="cardWrapper">
         <div class="card">
           <div class="picture">
-            <div class="cabinImage sjostugan"></div>
+            <div class="cabinImage sjostugan" aria-label="Stuga med brant lutande tak och stora glaspartier i skogen."></div>
           </div>
           <div class="infotext">
             <h3>Sjöstugan</h3>
@@ -20,7 +20,7 @@
       <div class="cardWrapper">
         <div class="card">
           <div class="picture">
-            <div class="cabinImage spegelboet"></div>
+            <div class="cabinImage spegelboet" alt="Kvadratisk spegelbeklädd kub till stuga uppe i träden. Entré via hängbro."></div>
           </div>
           <div class="infotext">
             <h3>Spegelboet</h3>
@@ -36,7 +36,7 @@
       <div class="cardWrapper">
         <div class="card">
           <div class="picture">
-            <div class="cabinImage trakojan"></div>
+            <div class="cabinImage trakojan" alt="Stuga med brant lutande tak och badtunna i skogen."></div>
           </div>
           <div class="infotext">
             <h3>Träkojan</h3>
@@ -52,7 +52,7 @@
       <div class="cardWrapper">
         <div class="card">
           <div class="picture">
-            <div class="cabinImage eldnastet"></div>
+            <div class="cabinImage eldnastet" alt="Eldstad med sprakande brasa."></div>
           </div>
           <div class="infotext">
             <h3>Eldnästet</h3>
@@ -111,19 +111,19 @@
         }
 
         .sjostugan {
-          background-image: url('../assets/images/sjostugan.jpg');
+          background-image: url("../assets/images/sjostugan.jpg");
         }
 
         .spegelboet {
-          background-image: url('../assets/images/spegelboet.jpg');
+          background-image: url("../assets/images/spegelboet.jpg");
         }
 
         .trakojan {
-          background-image: url('../assets/images/Trakoja.jpg');
+          background-image: url("../assets/images/Trakoja.jpg");
         }
 
         .eldnastet {
-          background-image: url('../assets/images/Eldnästet.jpg');
+          background-image: url("../assets/images/Eldnästet.jpg");
         }
       }
 
@@ -132,7 +132,7 @@
         justify-content: space-evenly;
 
         h3 {
-          font-family: 'Lilita One', sans-serif;
+          font-family: "Lilita One", sans-serif;
           font-weight: 400;
           font-size: 25px;
           margin-top: 0;
@@ -140,7 +140,7 @@
         }
 
         h4 {
-          font-family: 'Lilita One', sans-serif;
+          font-family: "Lilita One", sans-serif;
           font-weight: 400;
           font-size: 20px;
           margin-top: 0;
@@ -148,7 +148,7 @@
         }
 
         p {
-          font-family: 'Assistant', sans-serif;
+          font-family: "Assistant", sans-serif;
           font-size: 16px;
           margin-top: 0;
           margin-bottom: 15px; //ej specat

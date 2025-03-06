@@ -1,7 +1,7 @@
 <script setup>
-import BookingCards from '../components/BookingCards.vue';
-import MainFooter from '../components/MainFooter.vue';
-import MobileHeader from '../components/MobileHeader.vue';
+import BookingCards from "../components/BookingCards.vue";
+import MainFooter from "../components/MainFooter.vue";
+import MobileHeader from "../components/MobileHeader.vue";
 </script>
 
 <template>
