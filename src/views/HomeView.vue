@@ -1,12 +1,14 @@
 <script setup>
 import NewsletterPrenumeration from '../components/NewsletterPrenumeration.vue';
-import PageInformation from '../components/PageInformation.vue'; 
-import MainFooter from '@/components/MainFooter.vue';
+import PageInformation from '../components/PageInformation.vue';
+import CookieBar from '../components/CookieBar.vue';
+import MainFooter from '../components/MainFooter.vue';
 import Header from '../components/MobileHeader.vue';
 </script>
 
 <template>
   <main>
+    <CookieBar />
     <PageInformation />
     <NewsletterPrenumeration />
     <MainFooter />
@@ -21,4 +23,5 @@ main {
   display: flex;
   flex-direction: column;
 }
+
 </style>
