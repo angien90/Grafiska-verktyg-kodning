@@ -3,16 +3,20 @@ import NewsletterPrenumeration from '../components/NewsletterPrenumeration.vue';
 import PageInformation from '../components/PageInformation.vue';
 import CookieBar from '../components/CookieBar.vue';
 import MainFooter from '../components/MainFooter.vue';
-import Header from '../components/MobileHeader.vue';
+import MobileHeader from '../components/MobileHeader.vue';
 </script>
 
 <template>
+
+  <MobileHeader />
+
   <main>
     <CookieBar />
     <PageInformation />
     <NewsletterPrenumeration />
     <MainFooter />
   </main>
+ 
 </template>
 
 <style lang="scss" scoped>

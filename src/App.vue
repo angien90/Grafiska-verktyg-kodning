@@ -4,16 +4,8 @@ import HomeView from './views/HomeView.vue';
 </script>
 
 <template>
-  <div id="app">
-    <nav>
-      <router-link to="/">Hem</router-link> |
-      <router-link to="/about">Om oss</router-link>
-    </nav>
-
-    <main>
-      <router-view />
-    </main>   
-  </div>
+  <div id="app"></div>
+  <router-view />
 </template>
 
 <style scoped>

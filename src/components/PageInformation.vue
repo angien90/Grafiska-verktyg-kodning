@@ -9,7 +9,7 @@ import imagePath from '/src/assets/images/hus-startsida.jpg';
 	<br>	
 	<p>Låt vinden viska genom trädkronorna medan du slappnar av på din privata terrass. Vakna till ljudet av fågelsång och känn doften av nyskog. Här finns inga distraktioner, ingen stress – bara du, naturen och lugnet.</p>
 
-	<PrimaryButton buttonText="Boka rum" @click="$router.push('/about')" />
+	<PrimaryButton buttonText="Boka rum" @click="$router.push('/booking')" />
 
 	<img :src="imagePath" alt="Modernt hus ute i skogen" width="500" height="500">
 </template>
