@@ -8,6 +8,4 @@ import PageInformation from '../components/PageInformation.vue';
   <NewsletterPrenumeration />
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>

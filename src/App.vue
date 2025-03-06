@@ -12,7 +12,7 @@ import HomeView from './views/HomeView.vue';
 
     <main>
       <router-view />
-    </main>   
+    </main>
   </div>
 </template>
 
