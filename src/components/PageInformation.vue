@@ -40,5 +40,4 @@ img {
 	height: auto;
 	margin-bottom: $spacing;
 }
-
 </style>

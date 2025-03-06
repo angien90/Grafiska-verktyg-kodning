@@ -1,8 +1,7 @@
 <script setup>
 defineProps({
-  buttonText: String
+  buttonText: String,
 });
-
 </script>
 
 <template>
