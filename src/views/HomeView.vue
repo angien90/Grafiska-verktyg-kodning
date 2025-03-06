@@ -4,10 +4,21 @@ import PageInformation from '../components/PageInformation.vue';
 </script>
 
 <template>
-  <PageInformation />
-  <NewsletterPrenumeration />
+
+    <main>
+      <PageInformation />
+      <NewsletterPrenumeration />
+    </main>
+
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 
+main {
+  background-color: $sand;
+  min-height: 100vh; 
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
 </style>
