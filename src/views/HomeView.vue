@@ -1,9 +1,12 @@
 <script setup>
 import NewsletterPrenumeration from '../components/NewsletterPrenumeration.vue';
 import PageInformation from '../components/PageInformation.vue';
+import Header from '../components/MobileHeader.vue';
 </script>
 
 <template>
+    
+    <Header /> 
 
     <main>
       <PageInformation />
