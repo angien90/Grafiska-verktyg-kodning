@@ -89,19 +89,31 @@ h3 {
 	appearance: none;
 	-webkit-appearance: none;
 	-moz-appearance: none;
-	width: 60px;
+	width: 20px;
 	height: 20px;
 	background-color: $sand;
 	cursor: pointer;
 	display: flex;
-	justify-content: center;
 	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+.checkbox:checked::after {
+	content: '✔';
+	font-size: 18px;
+	color: #333;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 .newsletter-information {
 	font-family: $body-font;
 	font-size: 1.1rem;
 	line-height: 1.4;
+	flex: 1;
 }
 
 </style>
