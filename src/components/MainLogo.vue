@@ -2086,21 +2086,5 @@ C 243.52 490.69 253.41 490.64 260.00 489.00 Z"/>
 .logo {
     width: 50px;
     height: auto;
-
-    path {
-  stroke-dasharray: 500;
-  stroke-dashoffset: 500;
-  animation: draw 2s ease-out forwards;
 }
-}
-
-@keyframes draw {
-  0% {
-    stroke-dashoffset: 500;
-  }
-  100% {
-    stroke-dashoffset: 0;
-  }
-}
-
 </style>
