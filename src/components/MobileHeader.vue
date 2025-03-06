@@ -1,7 +1,6 @@
 <script setup>
 import { ref } from 'vue';
 
-
 const menuOpen = ref(false); // För att hålla reda på om menyn är öppen
 
 // Funktion för att toggla menyn
@@ -10,33 +9,31 @@ const toggleMenu = () => {
 };
 </script>
 
-
 <template>
-    <header class="header">
-      <h1>GLÄNTAN</h1>
-      <p>SOV MED STJÄRNORNA, VAKNA MED SKOGEN.</p>
+  <header class="header">
+    <h1>GLÄNTAN</h1>
+    <p>SOV MED STJÄRNORNA, VAKNA MED SKOGEN.</p>
 
-      <!-- Menu -->
-      <div class="menu-icon" @click="toggleMenu">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-      </div>
-  
-      <!-- Mobile-menu -->
-      <nav v-if="menuOpen" class="mobile-menu">
-        <ul>
+    <!-- Menu -->
+    <div class="menu-icon" @click="toggleMenu">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+
+    <!-- Mobile-menu -->
+    <nav v-if="menuOpen" class="mobile-menu">
+      <ul>
         <li><router-link to="/">Hem</router-link></li>
-         <li>Om oss</li>
-         <li><router-link to="/booking">Boka Rum</router-link></li>
-         <li>Kontakta oss</li>
-        </ul>
-      </nav>
-    </header>
+        <li>Om oss</li>
+        <li><router-link to="/booking">Boka Rum</router-link></li>
+        <li>Kontakta oss</li>
+      </ul>
+    </nav>
+  </header>
 </template>
-  
-<style lang="scss" scoped>
 
+<style lang="scss" scoped>
 .header {
   display: flex;
   flex-direction: column;
@@ -54,12 +51,12 @@ const toggleMenu = () => {
 }
 
 h1 {
-  color: $sand; 
+  color: $sand;
   display: flex;
   width: 290px;
   height: 83px;
   flex-shrink: 0;
-  font-family: $heading-font; 
+  font-family: $heading-font;
   font-size: 5rem; /* Storlek på Gläntan */
   margin: 0px 0px 30px 0px; /* Lägg till margin-bottom för att skapa mer utrymme mellan h1 och p */
   z-index: 1; /* Gör så att texten ligger framför bilden */
@@ -70,7 +67,7 @@ p {
   color: #fff;
   width: 264px;
   height: 94px;
-  font-family: "Lilita One";
+  font-family: 'Lilita One';
   font-size: 25px;
   font-style: normal;
   font-weight: 400;
@@ -84,20 +81,20 @@ p {
 
 .menu-icon {
   position: absolute;
-  top: 20px; 
-  right: 20px; 
+  top: 20px;
+  right: 20px;
   display: flex;
   flex-direction: column;
   gap: 1px;
   cursor: pointer;
-  z-index: 2; 
+  z-index: 2;
 }
 
 .bar {
   width: 44px;
   height: 10px;
   flex-shrink: 0;
-  background-color: $sand; 
+  background-color: $sand;
   border-radius: 50px;
   transition: 0.3s;
 }
@@ -106,7 +103,7 @@ p {
   position: absolute;
   top: 60px;
   right: 10px;
-  background:  #465c3e;
+  background: #465c3e;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   padding: 1rem;
@@ -124,17 +121,15 @@ p {
   padding: 10px 0;
   text-align: center;
   font-size: 18px;
-  color: $sand; 
+  color: $sand;
 }
 
 .mobile-menu a {
   text-decoration: none;
-  color: $sand; 
+  color: $sand;
 }
 
 .mobile-menu a:hover {
   text-decoration: underline;
 }
-
 </style>
-  

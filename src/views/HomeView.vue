@@ -7,7 +7,6 @@ import MobileHeader from '../components/MobileHeader.vue';
 </script>
 
 <template>
-
   <MobileHeader />
 
   <main>
@@ -16,7 +15,6 @@ import MobileHeader from '../components/MobileHeader.vue';
     <NewsletterPrenumeration />
     <MainFooter />
   </main>
- 
 </template>
 
 <style lang="scss" scoped>
@@ -27,5 +25,4 @@ main {
   display: flex;
   flex-direction: column;
 }
-
 </style>
