@@ -4,7 +4,7 @@ import BookingView from '../views/BookingView.vue';
 
 const routes = [
   { path: '/', component: HomeView },
-  { path: '/about', component: BookingView },
+  { path: '/booking', component: BookingView },
 ];
 
 const router = createRouter({

@@ -28,7 +28,7 @@ const toggleMenu = () => {
         <ul>
         <li><router-link to="/">Hem</router-link></li>
          <li>Om oss</li>
-         <li><router-link to="/boka-rum">Boka Rum</router-link></li>
+         <li><router-link to="/booking">Boka Rum</router-link></li>
          <li>Kontakta oss</li>
         </ul>
       </nav>
