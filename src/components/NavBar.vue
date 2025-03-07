@@ -65,6 +65,10 @@
 
     ul {
       padding: 0 92px 0 92px; //enligt layout i komponenter
+
+      li {
+        font-size: 40px; //enligt layout i komponenter
+      }
     }
   }
 }
