@@ -33,24 +33,28 @@
       padding: 0 128px 0 128px; //enligt layout i komponenter
 
       li {
+        cursor: pointer;
         font-family: $heading-font;
         font-size: 25px;
         text-transform: uppercase;
-        color: white;
+        color: $sand;
 
+        a {
           text-decoration: none;
           text-align: center;
+          color: inherit;
+        }
 
-          &:visited {
-            color: white;
-          }
+        &:visited {
+          color: white;
+        }
 
-          &.active {
-            border-bottom: 3px solid;
-          }
+        &:active {
+          border-bottom: 3px solid;
+        }
 
-          &:hover {
-            color: $morkbrun;
+        &:hover {
+          border-bottom: 3px solid $sand;
         }
       }
     }
