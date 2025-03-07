@@ -39,7 +39,7 @@ import MainLogo from '@/components/MainLogo.vue';
 
 <style scoped lang="scss">
 footer {
-  width: 100vw;
+  width: 100%;
   background-color: $skogsgron;
   color: $sand;
   font-family: $body-font;
