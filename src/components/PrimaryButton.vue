@@ -2,7 +2,6 @@
 defineProps({
   buttonText: String,
 });
-
 </script>
 
 <template>

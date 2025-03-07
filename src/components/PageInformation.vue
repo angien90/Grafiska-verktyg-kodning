@@ -149,7 +149,6 @@ p {
 	@media (min-width: 1512px) {
 		display: none;
 	}
-}
 
 .lake{
 	display:none;
