@@ -58,6 +58,12 @@
 
 <style lang="scss" scoped>
 
+
+main {
+  margin-top: 40px; /* Justera avståndet mellan headern och main-innehållet */
+}
+
+
 .cabins{
   width: 100%;
   display: flex;
