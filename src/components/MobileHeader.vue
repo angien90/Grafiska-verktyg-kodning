@@ -60,9 +60,9 @@ h1 {
   flex-shrink: 0;
   font-family: $heading-font; 
   font-size: 5rem; 
-  margin: 0px 0px 30px 0px; 
+  margin: 0 0 30px 0; 
   z-index: 1; 
-  box-shadow: px 1px 2px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: 0 1px 2px 0 rgba(0, 0, 0, 1);
 }
 
 p {
