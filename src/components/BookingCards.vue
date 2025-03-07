@@ -74,7 +74,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin: 25px 0;
+  margin: $spacing 0;
   padding: 0;
 
   .cardWrapper {
@@ -132,7 +132,7 @@
         justify-content: space-evenly;
 
         h3 {
-          font-family: "Lilita One", sans-serif;
+          font-family: $heading-font;
           font-weight: 400;
           font-size: 25px;
           margin-top: 0;
@@ -140,7 +140,7 @@
         }
 
         h4 {
-          font-family: "Lilita One", sans-serif;
+          font-family: $heading-font;
           font-weight: 400;
           font-size: 20px;
           margin-top: 0;
@@ -148,7 +148,7 @@
         }
 
         p {
-          font-family: "Assistant", sans-serif;
+          font-family: $body-font;
           font-size: 16px;
           margin-top: 0;
           margin-bottom: 15px; //ej specat
