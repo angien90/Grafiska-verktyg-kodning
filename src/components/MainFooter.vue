@@ -4,10 +4,12 @@ import MainLogo from '@/components/MainLogo.vue';
 
 <template>
   <footer>
-    <div class="footer-logo">
-      <MainLogo />
-      <h2>Gläntan</h2>
-    </div>
+    <a href="/">
+      <div class="footer-logo">
+        <MainLogo />
+        <h2>Gläntan</h2>
+      </div>
+    </a>
 
     <div class="footer-contact">
       <p><a href="https://www.google.com/maps" target="_blank">Hitta hit</a></p>
@@ -48,6 +50,11 @@ footer {
   align-items: center;
   text-align: center;
   padding: 20px;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 }
 
 .footer-logo {
