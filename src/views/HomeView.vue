@@ -4,11 +4,12 @@ import PageInformation from '../components/PageInformation.vue';
 import CookieBar from '../components/CookieBar.vue';
 import MainFooter from '../components/MainFooter.vue';
 import MobileHeader from '../components/MobileHeader.vue';
+import NavBar from '../components/NavBar.vue';
 </script>
 
 <template>
-
   <MobileHeader />
+  <NavBar />
 
   <main>
     <CookieBar />
@@ -16,7 +17,6 @@ import MobileHeader from '../components/MobileHeader.vue';
     <NewsletterPrenumeration />
     <MainFooter />
   </main>
- 
 </template>
 
 <style lang="scss" scoped>
@@ -27,5 +27,4 @@ main {
   display: flex;
   flex-direction: column;
 }
-
 </style>
