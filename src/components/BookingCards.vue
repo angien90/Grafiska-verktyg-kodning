@@ -161,17 +161,22 @@
 /* MEDIA QUERY FÖR STÖRRE SKÄRMAR (>600px) */
 @media (min-width: 800px) {
   .cabins {
-    width: 100%;
+    width: 80%;
     display: flex;
-    margin-top: 50px; //Minimiavstånd satt till 25px. Ökade eftersom det kändes för lite.
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 50px 10% 0 10%; //Minimiavstånd mellan komponenter satt till 25px. Ökade eftersom det kändes för lite.
 
     .cardWrapper {
       width: 50%;
+      display: flex;
       flex-wrap: wrap;
       flex-direction: row;
-      justify-content: space-around;
+      justify-content: center;
+      align-items: center;
 
       .card {
+        padding: 25px;
         margin-bottom: 50px; //Minimiavstånd satt till 25px. Ökade eftersom det kändes för lite.
       }
     }
@@ -182,6 +187,7 @@
 @media (min-width: 1500px) {
   .cabins {
     width: 100%;
+    margin: 0;
 
     .cardWrapper {
       width: 50%;
