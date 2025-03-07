@@ -1,8 +1,8 @@
 <script setup>
-
+import NavBar from "../components/NavBar.vue";
 import BookingCards from "../components/BookingCards.vue";
 import MainFooter from "../components/MainFooter.vue";
-import MobileHeader from "../components/MobileHeader.vue";
+import NewMobileHeader from "../components/NewMobileHeader.vue";
 </script>
 
 <template>
