@@ -59,7 +59,7 @@
   }
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 1000px) {
   nav {
     height: 130px;
 
