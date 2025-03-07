@@ -69,6 +69,7 @@
 </template>
 
 <style lang="scss" scoped>
+
 .cabins {
   width: 100%;
   display: flex;

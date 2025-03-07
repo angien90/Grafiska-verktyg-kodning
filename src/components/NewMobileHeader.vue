@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from 'vue';
+import PrimaryButton from './PrimaryButton.vue';
 
 const menuOpen = ref(false); 
 
@@ -8,10 +9,13 @@ const toggleMenu = () => {
 };
 </script>
 
+
 <template>
     <header class="header">
-      <h1>GLÄNTAN</h1>
-      <p>SOV MED STJÄRNORNA, VAKNA MED SKOGEN.</p>
+      <div class="header-content">
+        <h1>VÅRA RUM</h1>
+        <PrimaryButton buttonText="Boka nu!" @click="$router.push('/booking')" />
+      </div>
 
       <!-- Menu -->
       <div :class="['menu-icon', { 'open': menuOpen }]" @click="toggleMenu">
@@ -24,76 +28,76 @@ const toggleMenu = () => {
       <nav v-if="menuOpen" class="mobile-menu">
         <ul>
         <li><router-link to="/">Hem</router-link></li>
-        <li>Om oss</li>
-        <li><router-link to="/booking">Boka Rum</router-link></li>
-        <li>Kontakta oss</li>
-      </ul>
-    </nav>
-  </header>
+         <li>Om oss</li>
+         <li><router-link to="/booking">Boka Rum</router-link></li>
+         <li>Kontakta oss</li>
+        </ul>
+      </nav>
+    </header>
 </template>
-
+  
 <style lang="scss" scoped>
+
 .header {
   display: flex;
   flex-direction: column;
   justify-content: center; 
-  align-items: flex-start; 
+  align-items: center; 
   height: 305px;
-  background-image: url('../assets/images/skog-startsidan.jpg'); 
+  background-image: url('../assets/images/skog-våra-rum.jpg'); 
   background-size: cover; 
   background-position: center;
   padding-left: 20px; 
   padding-right: 20px; 
-  text-align: left;
   position: relative;
-  padding-top: 8rem;
+  padding-top: 3rem;
+  margin-bottom: 40px;
 }
 
 h1 {
-  color: $sand;
-  display: flex;
-  width: 290px;
-  height: 83px;
-  flex-shrink: 0;
-  font-family: $heading-font; 
-  font-size: 5rem; 
-  margin: 0px 0px 30px 0px; 
-  z-index: 1; 
-  box-shadow: px 1px 2px 0px rgba(0, 0, 0, 0.25);
+  color: #000;
+  font-family: "Lilita One";
+  font-size: 36px;
+  font-weight: 400;
+  letter-spacing: -0.792px;
+  margin: 0px 0px 10px 0px;
 }
 
-p {
-  color: #fff;
-  width: 264px;
-  height: 94px;
-  font-family: 'Lilita One';
-  font-size: 25px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 117%; 
-  letter-spacing: -0.55px;
-  margin-top: 10px; 
-  margin-left: 5px;
-  margin-bottom: 3.5rem;
-  z-index: 1; 
+.primary-button {
+  margin-top: 0; 
+  margin-bottom: 0;
+}
+
+.header-content {
+  width: 320px;
+  height: 180px;
+  flex-shrink: 0;
+  background-color: $sand; 
+  padding: 20px;
+  border-radius: 8px; /* Rundade hörn */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 .menu-icon {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 20px; 
+  right: 20px; 
   display: flex;
   flex-direction: column;
   gap: 5px;
   cursor: pointer;
-  z-index: 2;
+  z-index: 2; 
 }
 
 .bar {
   width: 44px;
   height: 10px;
   flex-shrink: 0;
-  background-color: $sand;
+  background-color: $sand; 
   border-radius: 50px;
   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
@@ -146,10 +150,12 @@ p {
 
 .mobile-menu a {
   text-decoration: none;
-  color: $sand;
+  color: $sand; 
 }
 
 .mobile-menu a:hover {
   text-decoration: underline;
 }
+
 </style>
+  
