@@ -9,9 +9,9 @@ const toggleMenu = () => {
 </script>
 
 <template>
-    <header class="header">
-      <h1>GLÄNTAN</h1>
-      <p>SOV MED STJÄRNORNA, VAKNA MED SKOGEN.</p>
+  <header class="header">
+    <h1>GLÄNTAN</h1>
+    <p>SOV MED STJÄRNORNA, VAKNA MED SKOGEN.</p>
 
       <!-- Menu -->
       <div :class="['menu-icon', { 'open': menuOpen }]" @click="toggleMenu">
