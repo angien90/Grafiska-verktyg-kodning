@@ -7,6 +7,7 @@ import BookingCards from "../components/BookingCards.vue";
   <div>
     <NavBar />
     <BookingCards />
+    <MainFooter />
   </div>
 </template>
 
