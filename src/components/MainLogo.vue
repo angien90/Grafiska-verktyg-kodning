@@ -26,18 +26,13 @@ onMounted(() => {
 </script>
 
 <template>
-  <svg
-    class="logo"
-    xmlns="http://www.w3.org/2000/svg"
-    xmlns:v="https://svgstorm.com"
-    viewBox="0 0 500 500"
-    width="500"
-    height="500"
-  >
-    <g fill="None" fill-opacity="0.0" stroke="#DEDDCB" stroke-opacity="1.00" stroke-width="0.3">
-      <path
-        d="
 
+<svg class="logo" role="img" aria-label="Gläntans logga"
+xmlns="http://www.w3.org/2000/svg" xmlns:v="https://svgstorm.com"
+viewBox = "0 0 500 500"
+width="500"
+height="500">
+<g fill="None" fill-opacity="0.0" stroke="#DEDDCB" stroke-opacity="1.00" stroke-width="0.3"><path d="
 M 0.00 500.00 
 L 500.00 500.00
 L 500.00 0.00
