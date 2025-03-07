@@ -1,14 +1,12 @@
 <script setup>
 import { ref } from 'vue';
 
-
 const menuOpen = ref(false); 
 
 const toggleMenu = () => {
   menuOpen.value = !menuOpen.value;
 };
 </script>
-
 
 <template>
     <header class="header">
@@ -26,16 +24,15 @@ const toggleMenu = () => {
       <nav v-if="menuOpen" class="mobile-menu">
         <ul>
         <li><router-link to="/">Hem</router-link></li>
-         <li>Om oss</li>
-         <li><router-link to="/booking">Boka Rum</router-link></li>
-         <li>Kontakta oss</li>
-        </ul>
-      </nav>
-    </header>
+        <li>Om oss</li>
+        <li><router-link to="/booking">Boka Rum</router-link></li>
+        <li>Kontakta oss</li>
+      </ul>
+    </nav>
+  </header>
 </template>
-  
-<style lang="scss" scoped>
 
+<style lang="scss" scoped>
 .header {
   display: flex;
   flex-direction: column;
@@ -53,7 +50,7 @@ const toggleMenu = () => {
 }
 
 h1 {
-  color: $sand; 
+  color: $sand;
   display: flex;
   width: 290px;
   height: 83px;
@@ -69,7 +66,7 @@ p {
   color: #fff;
   width: 264px;
   height: 94px;
-  font-family: "Lilita One";
+  font-family: 'Lilita One';
   font-size: 25px;
   font-style: normal;
   font-weight: 400;
@@ -83,20 +80,20 @@ p {
 
 .menu-icon {
   position: absolute;
-  top: 20px; 
-  right: 20px; 
+  top: 20px;
+  right: 20px;
   display: flex;
   flex-direction: column;
   gap: 5px;
   cursor: pointer;
-  z-index: 2; 
+  z-index: 2;
 }
 
 .bar {
   width: 44px;
   height: 10px;
   flex-shrink: 0;
-  background-color: $sand; 
+  background-color: $sand;
   border-radius: 50px;
   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
@@ -149,12 +146,10 @@ p {
 
 .mobile-menu a {
   text-decoration: none;
-  color: $sand; 
+  color: $sand;
 }
 
 .mobile-menu a:hover {
   text-decoration: underline;
 }
-
 </style>
-  
