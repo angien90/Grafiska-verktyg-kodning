@@ -19,7 +19,7 @@
 @media (min-width: 800px) {
   nav {
     background-color: $skogsgron;
-    width: 100vw;
+    width: 100%;
     height: 60px;
     display: flex;
 
