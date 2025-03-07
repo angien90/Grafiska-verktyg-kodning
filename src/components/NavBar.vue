@@ -38,7 +38,6 @@
         text-transform: uppercase;
         color: white;
 
-        a {
           text-decoration: none;
           text-align: center;
 
@@ -52,7 +51,6 @@
 
           &:hover {
             color: $morkbrun;
-          }
         }
       }
     }
