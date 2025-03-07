@@ -10,6 +10,7 @@ import MobileHeader from "../components/MobileHeader.vue";
    <NewMobileHeader />
 
   <div>
+    <NavBar />
     <BookingCards />
     <MainFooter />
   </div>
