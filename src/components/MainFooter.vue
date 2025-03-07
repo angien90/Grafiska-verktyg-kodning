@@ -10,22 +10,26 @@ import MainLogo from '@/components/MainLogo.vue';
     </div>
 
     <div class="footer-contact">
-      <p>Hitta hit</p>
-      <p>Tele: +46 777 777 77</p>
+      <p><a href="https://www.google.com/maps" target="_blank">Hitta hit</a></p>
+      <p>Tele: <a href="tel:+4677777777">+46 777 777 77</a></p>
       <p>Sociala medier</p>
       <div class="some-icons">
-        <img
-          src="@/assets/images/instagram-icon.svg"
-          width="25px"
-          height="25px"
-          alt="Sociala medier ikon för Instagram"
-        />
-        <img
-          src="@/assets/images/facebook-icon.svg"
-          width="25px"
-          height="25px"
-          alt="Sociala medier ikon för Facebook"
-        />
+        <a href="https://www.instagram.com/" target="_blank">
+          <img
+            src="@/assets/images/instagram-icon.svg"
+            width="25px"
+            height="25px"
+            alt="Sociala medier ikon för Instagram"
+          />
+        </a>
+        <a href="https://www.facebook.com/" target="_blank">
+          <img
+            src="@/assets/images/facebook-icon.svg"
+            width="25px"
+            height="25px"
+            alt="Sociala medier ikon för Facebook"
+          />
+        </a>
       </div>
     </div>
   </footer>
@@ -63,10 +67,23 @@ footer {
 .footer-contact {
   line-height: 1.7rem;
 
+  a {
+    text-decoration: none;
+    color: inherit;
+
+    &:hover {
+      border-bottom: 1px solid $sand;
+    }
+  }
+
   .some-icons {
     display: flex;
     justify-content: space-evenly;
     margin-top: 5px;
+
+    a {
+      border: none;
+    }
 
     img {
       width: 100%;
