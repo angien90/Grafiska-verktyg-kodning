@@ -128,6 +128,12 @@ footer {
   .footer-map-tel {
     text-align: left;
   }
+  
+  .some-icons {
+    img {
+      transform: scale(1.5);
+    }
+  }
 }
 
 /* Desktop */
