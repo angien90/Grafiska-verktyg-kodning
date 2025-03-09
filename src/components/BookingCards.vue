@@ -73,8 +73,6 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  //flex-wrap: wrap;
-  //align-items: center;
   margin: $spacing 0;
   padding: 0;
 
@@ -82,7 +80,6 @@
     width: 100%;
     height: auto;
     display: flex;
-    //flex-wrap: wrap;
     justify-content: center;
     margin: 0;
     padding: 0;
@@ -162,13 +159,10 @@
 /* MEDIA QUERY FÖR STÖRRE SKÄRMAR (>600px) */
 @media (min-width: 800px) {
   .cabins {
-    //width: 80%;
-    //display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
     margin-top: 50px;
-    //margin: 50px 10% 0 10%; //Minimiavstånd mellan komponenter satt till 25px. Ökade eftersom det kändes för lite.
 
     .cardWrapper {
       width: 50%;
@@ -190,7 +184,6 @@
 @media (min-width: 1500px) {
   .cabins {
     width: 100%;
-    //margin: 0;
 
     .cardWrapper {
       width: 50%;
