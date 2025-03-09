@@ -13,7 +13,7 @@ const isSubscribed = ref(false);
 </script>
 
 <template>
-  <div>
+  <span class="grid-layout">
     <h3>Prenumerera på vårt nyhetsbrev</h3>
     <form>
       <span class="form-1">
@@ -30,26 +30,41 @@ const isSubscribed = ref(false);
 
       <PrimaryButton buttonText="Prenumerera" />
     </form>
-  </div>
+  </span>
 </template>
 
 <style lang="scss" scoped>
-div {
+.grid-layout {
   background-color: $greige;
-  padding-top: $spacing;
-  padding-bottom: 5px;
-  padding-left: $spacing;
-  padding-right: $spacing;
+  padding: $spacing;
   margin-bottom: $spacing;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto auto;
+  gap: $spacing;
+  align-items: start;
 }
 
+
 h3 {
-  font-family: $heading-font;
-  font-size: 2rem;
-  margin-top: 0;
-  margin-bottom: $spacing;
-  text-transform: uppercase;
+	font-family: $heading-font;
+	font-size: 2rem;
+	margin-bottom: $spacing;
+	text-transform: uppercase;
   text-align: center;
+	padding-top: $spacing;
+	padding-left: $spacing;
+	padding-right: $spacing;
+  display: block;
+  grid-column: 1 / span 4;
+
+	@media (max-width: 834px) {
+		
+	}
+
+  	@media (min-width: 1512px) { 
+    	font-size: 2.5rem;
+	}
 }
 
 .form-1 {
@@ -58,6 +73,20 @@ h3 {
   padding-top: 0;
   padding-bottom: $spacing;
   text-align: left;
+  grid-template-rows: auto auto;
+  gap: $spacing;
+  width: 100%;
+
+  @media (min-width: 834px) {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1 / span 2;
+    grid-row: 1;
+  }
+
+	@media (min-width: 1512px) { 
+		
+	}
 }
 
 .epost {
@@ -71,7 +100,7 @@ h3 {
 
 .input {
   height: 40px;
-  border-color: $sand;
+  border-color: 1px solid $sand;
   border-radius: 15px;
   width: 100%;
   background-color: $sand;
@@ -84,6 +113,11 @@ h3 {
   padding-top: $spacing;
   padding-left: 10px;
   padding-right: 10px;
+
+  @media (min-width: 834px) {
+    grid-column: 3 / span 4;
+    grid-row: 1;
+  }
 }
 
 .checkbox {
@@ -115,5 +149,10 @@ h3 {
   font-size: 1.1rem;
   line-height: 1.4;
   flex: 1;
+
+  @media (min-width: 834px) {
+    grid-column: 3 / span 2;
+    grid-row: 1;
+  }
 }
 </style>

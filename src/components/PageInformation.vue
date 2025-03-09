@@ -53,6 +53,7 @@ h3 {
 	padding-right: $spacing;
 
 	@media (max-width: 834px) {
+		display: contents;
 		grid-column: 1 / span 2;
 	}
 
