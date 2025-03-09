@@ -51,7 +51,6 @@ const toggleMenu = () => {
   padding-right: 20px; 
   position: relative;
   padding-top: 3rem;
-  margin-bottom: 40px;
 }
 
 h1 {

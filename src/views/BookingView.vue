@@ -1,7 +1,8 @@
 <script setup>
-import BookingCards from '../components/BookingCards.vue';
-import MainFooter from '../components/MainFooter.vue';
-import NewMobileHeader from '../components/NewMobileHeader.vue';
+import NavBar from "../components/NavBar.vue";
+import BookingCards from "../components/BookingCards.vue";
+import MainFooter from "../components/MainFooter.vue";
+import NewMobileHeader from "../components/NewMobileHeader.vue";
 </script>
 
 <template>
@@ -9,9 +10,18 @@ import NewMobileHeader from '../components/NewMobileHeader.vue';
    <NewMobileHeader />
 
   <div>
+    <NavBar />
     <BookingCards />
     <MainFooter />
   </div>
 </template>
 
-<style scoped></style>
+<style lang="scss" scoped>
+main {
+  background-color: $sand;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+</style>
