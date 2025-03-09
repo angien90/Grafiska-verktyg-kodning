@@ -36,15 +36,19 @@ const isSubscribed = ref(false);
 <style lang="scss" scoped>
 .grid-layout {
   background-color: $greige;
-  padding: $spacing;
+  padding-left: $spacing;
+  padding-right: $spacing;
   margin-bottom: $spacing;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto auto;
-  gap: $spacing;
-  align-items: start;
 }
 
+form {
+  @media (min-width: 834px) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto;
+    align-items: start;
+  }
+}
 
 h3 {
 	font-family: $heading-font;
@@ -56,13 +60,10 @@ h3 {
 	padding-left: $spacing;
 	padding-right: $spacing;
   display: block;
-  grid-column: 1 / span 4;
+  
 
-	@media (max-width: 834px) {
-		
-	}
-
-  	@media (min-width: 1512px) { 
+  	@media (min-width: 1512px) {
+      grid-column: 1 / span 4; 
     	font-size: 2.5rem;
 	}
 }
@@ -76,16 +77,12 @@ h3 {
   grid-template-rows: auto auto;
   gap: $spacing;
   width: 100%;
-
+  
   @media (min-width: 834px) {
-    display: flex;
-    flex-direction: column;
     grid-column: 1 / span 2;
-    grid-row: 1;
   }
 
 	@media (min-width: 1512px) { 
-		
 	}
 }
 
@@ -95,15 +92,23 @@ h3 {
   font-size: $spacing;
   text-transform: uppercase;
   width: 100%;
-  padding-left: 10px;
+
+  @media (min-width: 834px) {
+    grid-column: 1 / span 2;
+  } 
 }
 
 .input {
   height: 40px;
   border-color: 1px solid $sand;
   border-radius: 15px;
+  border: 1px solid $sand;
   width: 100%;
   background-color: $sand;
+
+  @media (min-width: 834px) {
+    grid-column: 1 / span 2;
+  }
 }
 
 .form-2 {
@@ -115,8 +120,9 @@ h3 {
   padding-right: 10px;
 
   @media (min-width: 834px) {
-    grid-column: 3 / span 4;
-    grid-row: 1;
+    grid-column: 3 / span 2;
+    padding-left: $spacing;
+    
   }
 }
 
@@ -127,6 +133,7 @@ h3 {
   width: 20px;
   height: 20px;
   background-color: $sand;
+  border: 1px solid $skogsgron;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -152,7 +159,12 @@ h3 {
 
   @media (min-width: 834px) {
     grid-column: 3 / span 2;
-    grid-row: 1;
+  }
+}
+
+.primary-button{
+  @media (min-width: 834px) {
+    grid-column: 1 / span 4;
   }
 }
 </style>
