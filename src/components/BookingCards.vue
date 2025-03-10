@@ -1,7 +1,7 @@
 <template>
   <main>
-    <div class="cabins">
-      <div class="cardWrapper">
+    <section class="cabins">
+      <article class="cardWrapper">
         <div class="card">
           <div class="picture">
 
@@ -17,9 +17,9 @@
             <h4>Från 1 399 kr</h4>
           </div>
         </div>
-      </div>
+      </article>
 
-      <div class="cardWrapper">
+      <article class="cardWrapper">
         <div class="card">
           <div class="picture">
 
@@ -35,9 +35,9 @@
             <h4>Från 1 758 kr</h4>
           </div>
         </div>
-      </div>
+      </article>
 
-      <div class="cardWrapper">
+      <article class="cardWrapper">
         <div class="card">
           <div class="picture">
 
@@ -53,9 +53,9 @@
             <h4>Från 1 549 kr</h4>
           </div>
         </div>
-      </div>
+      </article>
 
-      <div class="cardWrapper">
+      <article class="cardWrapper">
         <div class="card">
           <div class="picture">
 
@@ -71,8 +71,8 @@
             <h4>Från 2 129 kr</h4>
           </div>
         </div>
-      </div>
-    </div>
+      </article>
+    </section>
   </main>
 </template>
 
