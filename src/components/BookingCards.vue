@@ -4,7 +4,9 @@
       <div class="cardWrapper">
         <div class="card">
           <div class="picture">
-            <div class="cabinImage sjostugan" aria-label="Stuga med brant lutande tak och stora glaspartier i skogen."></div>
+
+              <img src="../assets/images/sjostugan.jpg" alt="Stuga med brant lutande tak och stora glaspartier i skogen.">
+
           </div>
           <div class="infotext">
             <h3>Sjöstugan</h3>
@@ -20,7 +22,9 @@
       <div class="cardWrapper">
         <div class="card">
           <div class="picture">
-            <div class="cabinImage spegelboet" alt="Kvadratisk spegelbeklädd kub till stuga uppe i träden. Entré via hängbro."></div>
+
+              <img src="../assets/images/spegelboet.jpg" alt="Kvadratisk spegelbeklädd kub till stuga uppe i träden. Entré via hängbro.">
+
           </div>
           <div class="infotext">
             <h3>Spegelboet</h3>
@@ -36,7 +40,9 @@
       <div class="cardWrapper">
         <div class="card">
           <div class="picture">
-            <div class="cabinImage trakojan" alt="Stuga med brant lutande tak och badtunna i skogen."></div>
+
+              <img src="../assets/images/trakoja.jpg" alt="Stuga med brant lutande tak och badtunna i skogen.">
+
           </div>
           <div class="infotext">
             <h3>Träkojan</h3>
@@ -52,7 +58,9 @@
       <div class="cardWrapper">
         <div class="card">
           <div class="picture">
-            <div class="cabinImage eldnastet" alt="Eldstad med sprakande brasa."></div>
+
+              <img src="../assets/images/eldnastet.jpg" alt="Eldstad med sprakande brasa.">
+
           </div>
           <div class="infotext">
             <h3>Eldnästet</h3>
@@ -75,7 +83,6 @@
   flex-direction: column;
   margin: $spacing 0;
   padding: 0;
-  border: solid black 5px;
 
   .cardWrapper {
     width: 100%;
@@ -84,53 +91,43 @@
     justify-content: center;
     margin: 0;
     padding: 0;
-    border: solid green 2px;
 
     .card {
       background-color: $greige;
       width: 320px;
-      height: 530px; //Ökat från de specade 450px eftersom innehållet inte ryms då
+      height: auto; //Ämdrat till auto från de specade 450px eftersom innehållet är så olika stort och då ger olika mycket tomt utrymme
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: space-evenly;
       border-radius: 5px;
       box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
       margin-top: 0;
       margin-bottom: 25px;
-      border: solid red 2px;
+      padding: 25px;
 
-      .picture {
-        display: block;
-
-        .cabinImage {
+        .picture {
           width: 260px;
           height: 290px;
-          background-size: cover;
-          background-position: center center;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          overflow: hidden;
           border-radius: 5px;
-        }
+          margin: 0;
+          padding: 0;
 
-        .sjostugan {
-          background-image: url('../assets/images/sjostugan.jpg');
+          img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
         }
-
-        .spegelboet {
-          background-image: url('../assets/images/spegelboet.jpg');
-        }
-
-        .trakojan {
-          background-image: url('../assets/images/Trakoja.jpg');
-        }
-
-        .eldnastet {
-          background-image: url('../assets/images/Eldnästet.jpg');
-        }
-      }
+     
 
       .infotext {
         width: 260px;
-        justify-content: space-evenly;
+        height: auto;
+        padding-top: 5px;
 
         h3 {
           font-family: $heading-font;
@@ -152,7 +149,7 @@
           font-family: $body-font;
           font-size: pxtorem(16px);
           margin-top: 0;
-          margin-bottom: 15px; //ej specat
+          margin-bottom: 5px; //ej specat
         }
       }
     }
@@ -206,12 +203,11 @@
           height: 100%;
           width: 50%;
 
-          .cabinImage {
-            height: 385px;
+          height: 385px;
             width: 290px;
             display: block;
             object-fit: cover;
-          }
+
         }
 
         .infotext {
