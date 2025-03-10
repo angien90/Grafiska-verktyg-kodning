@@ -3,11 +3,9 @@
     <section class="cabins">
       <article class="cardWrapper">
         <div class="card">
-          <div class="picture">
-
-              <img src="../assets/images/sjostugan.jpg" alt="Stuga med brant lutande tak och stora glaspartier i skogen.">
-
-          </div>
+          <figure class="picture">
+            <img src="../assets/images/sjostugan.jpg" alt="Stuga med brant lutande tak och stora glaspartier i skogen.">
+          </figure>
           <div class="infotext">
             <h3>Sjöstugan</h3>
             <p>
@@ -21,11 +19,9 @@
 
       <article class="cardWrapper">
         <div class="card">
-          <div class="picture">
-
-              <img src="../assets/images/spegelboet.jpg" alt="Kvadratisk spegelbeklädd kub till stuga uppe i träden. Entré via hängbro.">
-
-          </div>
+          <figure class="picture">
+            <img src="../assets/images/spegelboet.jpg" alt="Kvadratisk spegelbeklädd kub till stuga uppe i träden. Entré via hängbro.">
+          </figure>
           <div class="infotext">
             <h3>Spegelboet</h3>
             <p>
@@ -39,11 +35,9 @@
 
       <article class="cardWrapper">
         <div class="card">
-          <div class="picture">
-
-              <img src="../assets/images/trakoja.jpg" alt="Stuga med brant lutande tak och badtunna i skogen.">
-
-          </div>
+          <figure class="picture">
+            <img src="../assets/images/trakoja.jpg" alt="Stuga med brant lutande tak och badtunna i skogen.">
+          </figure>
           <div class="infotext">
             <h3>Träkojan</h3>
             <p>
@@ -57,11 +51,9 @@
 
       <article class="cardWrapper">
         <div class="card">
-          <div class="picture">
-
-              <img src="../assets/images/eldnastet.jpg" alt="Eldstad med sprakande brasa.">
-
-          </div>
+          <figure class="picture">
+            <img src="../assets/images/eldnastet.jpg" alt="Eldstad med sprakande brasa.">
+          </figure>
           <div class="infotext">
             <h3>Eldnästet</h3>
             <p>
