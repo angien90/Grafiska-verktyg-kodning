@@ -187,6 +187,7 @@
 @media (min-width: 1500px) {
   .cabins {
     width: 100%;
+    margin-bottom: 0;
 
     .cardWrapper {
       width: 50%;
@@ -199,7 +200,7 @@
         flex-direction: row;
         justify-content: space-around;
         padding: 25px; //ej specat
-        margin-bottom: 75px; //Minimiavstånd satt till 25px. Ökade eftersom det kändes för lite.
+        margin-bottom: 50px; //Minimiavstånd satt till 25px. Ökade eftersom det kändes för lite.
 
         .picture {
           height: 100%;
