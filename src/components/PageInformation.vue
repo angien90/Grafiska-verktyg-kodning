@@ -1,49 +1,218 @@
 <script setup>
-import SecondaryButton from './SecondaryButton.vue';
+import { computed } from 'vue';
+import PrimaryButton from './PrimaryButton.vue';
 import imagePath from '/src/assets/images/hus-startsida.jpg';
+
+const showExtraImages = computed(() => window.innerWidth >= 834);
 </script>
 
 <template>
-	<span>
-		<h3>Följ stigen till lugnet - Gläntan väntar!</h3>
-		<p>Djupt inne i den svenska skogen, vid en spegelblank sjö, ligger Gläntan – en plats för stillhet, återhämtning och upplevelser i naturens rytm. Här bor du i trädkojor svävande bland grenarna, vattengömslen vid sjöns kant eller glashus där natthimlen blir din utsikt.</p>
-		<p>Låt vinden viska genom trädkronorna medan du slappnar av på din privata terrass. Vakna till ljudet av fågelsång och känn doften av nyskog. Här finns inga distraktioner, ingen stress – bara du, naturen och lugnet.</p>
-  	
-		<SecondaryButton buttonText="Boka rum" />
+	<span class="grid-layout">
+		<div class="text-and-fireplace">
+			<div class="first-paragraph">
+				<h3>Följ stigen till lugnet - Gläntan väntar!</h3>
+				<p>Djupt inne i den svenska skogen, vid en spegelblank sjö, ligger Gläntan – en plats för stillhet, återhämtning och upplevelser i naturens rytm. Här bor du i trädkojor svävande bland grenarna, vattengömslen vid sjöns kant eller glashus där natthimlen blir din utsikt.</p>
+			</div>
 
-		<img :src="imagePath" alt="Modernt hus ute i skogen" width="500" height="500">
+			<img class="fireplace" v-if="showExtraImages" src="/src/assets/images/eldstad-startsida.jpg" alt="Modern stuga med eldstad och kök" width="500" height="500">
+		</div>
+		<br>
+		<div class="forest-and-text">
+			<img class="forest-top":src="imagePath" alt="Modernt stuga ute i skogen" width="500" height="500">
+			<div class="second-paragraph">
+				<p>Låt vinden viska genom trädkronorna medan du slappnar av på din privata terrass. Vakna till ljudet av fågelsång och känn doften av nyskog. Här finns inga distraktioner, ingen stress – bara du, naturen och lugnet.</p>
+				<PrimaryButton class="button-tablet-desktop" buttonText="Boka rum" @click="$router.push('/booking')" />	
+			</div>
+		</div>
+			
+		<PrimaryButton class="button-mobile" buttonText="Boka rum" @click="$router.push('/booking')" />			
+			
+		<img class="forest-botton":src="imagePath" alt="Modernt stuga ute i skogen" width="500" height="500">
+      	<img v-if="showExtraImages" class="lake" src="/src/assets/images/sjö-startsida.jpg" alt="En kajak med två personer på en lugn sjö ute i skogen" width="500" height="500">
 	</span>
 </template>
 
-<style scoped>
-span {
-	background-color: #E9E2CF;
-	padding-top: 25px;
-	padding-bottom: 25px;
+<style lang="scss" scoped>
+.grid-layout {
+	display: flex;
+	flex-direction: column;
+
+	@media (min-width: 834px) {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr); 
+	}
 }
 
 h3 {
-	font-size: 32px;
-	margin-top: 0;
-	margin-bottom: 25px;
+	font-family: $heading-font;
+	font-size: 2rem;
+	margin-bottom: $spacing;
 	text-transform: uppercase;
-	padding-left: 25px;
-	padding-right: 25px;
+	margin-top: $spacing;
+	padding-left: $spacing;
+	padding-right: $spacing;
+
+	@media (min-width: 834px) {
+		margin-top: 0;
+	}
+
+  	@media (min-width: 1512px) { 
+    	font-size: 2.25rem;
+	}
 }
 
 p {
-	font-size: 16px;
+	font-family: $body-font;
+	font-size: 1rem;
 	margin-top: 0;
-	margin-bottom: 25px;
 	text-align: start;
-	padding-left: 25px;
-	padding-right: 25px;
+	padding-left: $spacing;
+	padding-right: $spacing;
+
+	@media (min-width: 834px) {
+		font-size: 1.25rem;
+	}
+
+	@media (min-width: 1512px) { 
+		font-size: 1.5rem;
+	}
 }
 
-img {
+.forest-top, .forest-bottom, .fireplace, .lake {
 	width: 100%;
-	height: auto;
-	margin-top: 25px;
+	object-fit: cover;
 }
 
+.forest-top {
+	display: none;
+
+	@media (min-width: 834px) {
+		display: block;
+		grid-column: 1 / span 2;
+		padding-right: 100px;
+		height: 330px; 
+		margin-top: $spacing;
+		padding-left: $spacing;
+		justify-self: left;
+	}
+
+	@media (min-width: 1512px) {
+		height: 350px;
+	}
+}
+
+.text-and-fireplace {
+	display: flex;
+	flex-direction: column;
+
+	@media (min-width: 834px) {
+		grid-column: 3 / span 2;
+		margin-left: -100px;
+		padding-right: $spacing;
+		padding-bottom: $spacing;
+	}
+}
+
+.first-paragraph {
+	display: flex;
+	flex-direction: column;
+
+	@media (min-width: 834px) {
+		grid-column: 3 / span 2;
+		grid-row: 1;
+		justify-self: start;
+		margin-top: $spacing;
+	}
+}
+
+.forest-and-text {
+	display: flex;
+	flex-direction: column;
+
+	@media (min-width: 834px) {
+		grid-column: 1 / span 2;
+		grid-row: 1;
+	}
+}
+
+.second-paragraph {
+	@media (min-width: 834px) {
+		grid-column: 1 / span 2;
+		padding-right: 100px;
+		margin-top: $spacing;
+  }
+}
+
+.second-paragraph p::first-letter {
+	@media (min-width: 834px) {
+		font-size: 2rem; 
+		font-weight: bold;
+	}
+
+	@media (min-width: 1512px) {
+		font-size: 3rem; 
+	}
+}
+
+.fireplace {
+	display: none;
+
+	@media (min-width: 834px) {
+		display: block;
+		height: 280px;
+		grid-column: 3 / span 2;
+		margin-top: $spacing;
+		padding-left: $spacing;
+	}
+
+	@media (min-width: 1512px) {
+		height: 380px;
+	}
+}
+
+.forest-botton {
+	width: 100%;
+	height: 350px;
+	object-fit: cover;
+	margin-bottom: $spacing;
+
+	@media (min-width: 834px) {
+		display: none;
+	}
+
+	@media (min-width: 1512px) {
+		display: none;
+	}
+}
+
+.lake{
+	display:none;
+
+	@media (min-width: 834px) {
+		display: block;
+		grid-column: 1 / span 4;
+		grid-row: 2;
+		height: 225px;
+	}
+
+	@media (min-width: 1512px) {
+		height: 235px;
+	}
+}
+
+.button-mobile {
+	display: block;
+
+	@media (min-width: 834px) {
+		display: none;
+	}
+}
+
+.button-tablet-desktop {
+	display: none;
+
+	@media (min-width: 834px) {
+		display: block;
+	}
+}
 </style>

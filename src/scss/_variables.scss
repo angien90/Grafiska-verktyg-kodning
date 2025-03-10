@@ -24,6 +24,8 @@ $spacing: 25px;
 
 /* Buttons */
 @mixin primary-button {
+  display: block;
+  margin: 0 auto;
   cursor: pointer;
   width: 150px;
   min-height: 45px;
@@ -31,11 +33,13 @@ $spacing: 25px;
   border-radius: 7px;
   background-color: $skogsgron;
   text-align: center;
-  color: white;
+  color: $sand;
   font-family: $body-font;
   font-weight: bold;
   font-size: pxtorem(16px);
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+  margin-top: $spacing;
+  margin-bottom: $spacing;
 
   &:hover {
     background-color: $lovgron;
@@ -48,6 +52,8 @@ $spacing: 25px;
 }
 
 @mixin secondary-button {
+  display: block;
+  margin: 0 auto;
   cursor: pointer;
   width: 150px;
   min-height: 45px;
@@ -55,11 +61,13 @@ $spacing: 25px;
   border-radius: 7px;
   background-color: $tradstam;
   text-align: center;
-  color: white;
+  color: $sand;
   font-family: $body-font;
   font-weight: bold;
   font-size: pxtorem(16px);
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+  margin-top: $spacing;
+  margin-bottom: $spacing;
 
   &:hover {
     background-color: $morkbrun;

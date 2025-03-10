@@ -1,11 +1,11 @@
 <script>
-import SecondaryButton from './SecondaryButton.vue';
+import PrimaryButton from './PrimaryButton.vue';
 import { ref } from 'vue';
 
 export default {
   components: {
-    SecondaryButton
-  }
+    PrimaryButton,
+  },
 };
 
 const email = ref('');
@@ -13,74 +13,158 @@ const isSubscribed = ref(false);
 </script>
 
 <template>
-	<span>
-		<h3>Prenumerera på vårt nyhetsbrev</h3>
-		<form>
-			<span class="form">
-				<label class="epost" for="epost">Mailadress</label><br>
-				<input class="input" type="email" id="epost" name="epost" v-model="email">
-			</span>
+  <span class="grid-layout">
+    <h3>Prenumerera på vårt nyhetsbrev</h3>
+    <form>
+      <span class="form-1">
+        <label class="epost" for="epost">Mailadress</label><br />
+        <input class="input" type="email" id="epost" name="epost" v-model="email" />
+      </span>
 
-			<span class="form">
-				<input class="checkbox" type="checkbox" id="newsletter" name="newsletter" v-model="isSubscribed">
-				<label for="newsletter"> Ja tack! Jag vill få nyhetsbrev från Gläntan med unika erbjudanden och inspiration om naturupplevelser.</label>
-			</span>
-		</form>
-		<SecondaryButton buttonText="Prenumerera" />
-	</span>
+      <span class="form-2">
+        <input class="checkbox" type="checkbox" id="newsletter" name="newsletter" v-model="isSubscribed" />
+        <label class="newsletter-information" for="newsletter">Ja tack! Jag vill få nyhetsbrev från Gläntan med unika erbjudanden och inspiration om naturupplevelser.</label>
+      </span>
+      <PrimaryButton buttonText="Prenumerera" />
+    </form>
+  </span>
 </template>
 
-<style scoped>
-span {
-	background-color: #AD9072;
-	padding-top: 25px;
-	padding-bottom: 25px;
-	padding-left: 15px;
-	padding-right: 15px;
-
+<style lang="scss" scoped>
+.grid-layout {
+  background-color: $greige;
+  padding-left: $spacing;
+  padding-right: $spacing;
+  margin-bottom: $spacing;
 }
 
 h3 {
-	font-size: 32px;
-	margin-top: 0;
-	margin-bottom: 25px;
-	text-transform: uppercase;
+    font-family: $heading-font;
+    font-size: 2.25rem;
+    margin-bottom: $spacing;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: $spacing;
+    padding-left: $spacing;
+    padding-right: $spacing;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
 
+  	@media (min-width: 1512px) {
+      grid-column: 1 / span 4; 
+	}
 }
 
-.form {
-	padding-left: 0;
-	padding-right: 0;
-	padding-top: 0;
-	padding-bottom: 25px;
-	text-align: left;	
+form {
+  @media (min-width: 834px) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: start;
+  }
+}
+
+.form-1 {
+  padding-left: 10px;
+  padding-bottom: $spacing;
+  text-align: left;
+  width: 100%;
+  
+  @media (min-width: 834px) {
+    grid-column: 1 / span 2;
+    margin-left: 40px;
+  }
 }
 
 .epost {
-	text-align: start;
-	font-size: 25px;
-	text-transform: uppercase;
-	width: 100%;
-	padding-left: 10px;
+  font-family: $heading-font;
+  font-size: 1.5rem;
+  text-align: start;
+  font-size: $spacing;
+  text-transform: uppercase;
+  width: 100%;
+
+  @media (min-width: 834px) {
+    grid-column: 1 / span 2;
+    margin-left: 5px;
+  } 
 }
 
 .input {
-	height: 40px;
-	border-color: #E9E2CF;
-	border-radius: 15px;
-	width: 98%;
-	background-color: #E9E2CF;
-	
+  height: 40px;
+  width: 100%;
+  border-color: 1px solid $sand;
+  border-radius: 15px;
+  border: 1px solid $sand;
+  background-color: $sand;
+  padding: 8px;
+
+  @media (min-width: 834px) {
+    grid-column: 1 / span 2;
+    width: 90%;
+  }
+
+  @media (min-width: 1512px) {
+    width: 70%;
+  }
+}
+
+.form-2 {
+  display: flex;
+  align-items: start;
+  gap: 10px;
+  padding-top: $spacing;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  @media (min-width: 834px) {
+    grid-column: 3 / span 2;
+    margin-right: 40px;
+    padding-left: $spacing;
+    padding-top: 0;
+    align-self: center;
+  }
 }
 
 .checkbox {
   appearance: none;
-  -webkit-appearance: none; /* För Safari */
+  -webkit-appearance: none;
   -moz-appearance: none;
   width: 20px;
   height: 20px;
-  background-color: #E9E2CF; 
+  background-color: $sand;
+  border: 1px solid $skogsgron;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
+.checkbox:checked::after {
+  content: '✔';
+  font-size: 18px;
+  color: #333;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.newsletter-information {
+  font-family: $body-font;
+  font-size: 1.1rem;
+  line-height: 1.4;
+  flex: 1;
+
+  @media (min-width: 834px) {
+    grid-column: 3 / span 2;
+  }
+}
+
+.primary-button{
+  @media (min-width: 834px) {
+    grid-column: 1 / span 4;
+  }
+}
 </style>
