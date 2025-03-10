@@ -173,8 +173,13 @@
       align-items: center;
 
       .card {
+        height: 530px;
         padding: 25px;
         margin-bottom: 50px; //Minimiavstånd satt till 25px. Ökade eftersom det kändes för lite.
+
+        h4 {
+        padding-top: 25px;
+        }
       }
     }
   }
