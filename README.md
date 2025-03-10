@@ -127,13 +127,13 @@ Mer detaljerade bilder över designen ligger i mappen assets/screenshot design.
 ### Grafisk profil och komponenter 
 ![Grafisk profil och komponenter](https://github.com/user-attachments/assets/6243b069-1bab-4b73-a421-d859b7eebcbc)
 
-### Design för mobilen
+### Design för mobilen 
 ![Mobile design](https://github.com/user-attachments/assets/0066319a-5470-45a3-bc5f-48dd3d45425b)
 
 ### Design för tablet
 ![Tablet design](https://github.com/user-attachments/assets/881c60cc-0601-4d70-b85c-0101f19ec2d7)
 
-### DEsign för desktop
+### Design för desktop
 ![Desktop design](https://github.com/user-attachments/assets/2fd2b74a-b5d1-4d87-8d44-9b17fb3f7f13)
 
 
