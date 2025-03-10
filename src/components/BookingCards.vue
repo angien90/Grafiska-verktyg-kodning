@@ -69,12 +69,10 @@
 </template>
 
 <style lang="scss" scoped>
-
 .cabins {
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  flex-direction: column;
   margin: $spacing 0;
   padding: 0;
 
@@ -82,8 +80,7 @@
     width: 100%;
     height: auto;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     margin: 0;
     padding: 0;
 
@@ -112,19 +109,19 @@
         }
 
         .sjostugan {
-          background-image: url("../assets/images/sjostugan.jpg");
+          background-image: url('../assets/images/sjostugan.jpg');
         }
 
         .spegelboet {
-          background-image: url("../assets/images/spegelboet.jpg");
+          background-image: url('../assets/images/spegelboet.jpg');
         }
 
         .trakojan {
-          background-image: url("../assets/images/Trakoja.jpg");
+          background-image: url('../assets/images/Trakoja.jpg');
         }
 
         .eldnastet {
-          background-image: url("../assets/images/Eldnästet.jpg");
+          background-image: url('../assets/images/Eldnästet.jpg');
         }
       }
 
@@ -135,7 +132,7 @@
         h3 {
           font-family: $heading-font;
           font-weight: 400;
-          font-size: 25px;
+          font-size: pxtorem(25px);
           margin-top: 0;
           text-transform: uppercase;
         }
@@ -143,14 +140,14 @@
         h4 {
           font-family: $heading-font;
           font-weight: 400;
-          font-size: 20px;
+          font-size: pxtorem(20px);
           margin-top: 0;
           text-transform: uppercase;
         }
 
         p {
           font-family: $body-font;
-          font-size: 16px;
+          font-size: 1rem;
           margin-top: 0;
           margin-bottom: 15px; //ej specat
         }
@@ -162,11 +159,10 @@
 /* MEDIA QUERY FÖR STÖRRE SKÄRMAR (>600px) */
 @media (min-width: 800px) {
   .cabins {
-    width: 80%;
-    display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin: 50px 10% 0 10%; //Minimiavstånd mellan komponenter satt till 25px. Ökade eftersom det kändes för lite.
+    flex-wrap: wrap;
+    margin-top: 50px;
 
     .cardWrapper {
       width: 50%;
@@ -188,7 +184,6 @@
 @media (min-width: 1500px) {
   .cabins {
     width: 100%;
-    margin: 0;
 
     .cardWrapper {
       width: 50%;
@@ -223,8 +218,16 @@
           justify-content: space-around;
           padding-left: 15px; //ej specat
 
+          h3 {
+            font-size: pxtorem(38px);
+          }
+
+          h4 {
+            font-size: pxtorem(30px);
+          }
+
           p {
-            font-size: 25px;
+            font-size: pxtorem(25px);
           }
         }
       }

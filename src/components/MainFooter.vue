@@ -12,26 +12,31 @@ import MainLogo from '@/components/MainLogo.vue';
     </a>
 
     <div class="footer-contact">
-      <p><a href="https://www.google.com/maps" target="_blank">Hitta hit</a></p>
-      <p>Tele: <a href="tel:+4677777777">+46 777 777 77</a></p>
-      <p>Sociala medier</p>
-      <div class="some-icons">
-        <a href="https://www.instagram.com/" target="_blank">
-          <img
-            src="@/assets/images/instagram-icon.svg"
-            width="25px"
-            height="25px"
-            alt="Sociala medier ikon för Instagram"
-          />
-        </a>
-        <a href="https://www.facebook.com/" target="_blank">
-          <img
-            src="@/assets/images/facebook-icon.svg"
-            width="25px"
-            height="25px"
-            alt="Sociala medier ikon för Facebook"
-          />
-        </a>
+      <div class="footer-map-tel">
+        <p><a href="https://www.google.com/maps" target="_blank">Hitta hit</a></p>
+        <p>Tele: <a href="tel:+4677777777">+46 777 777 77</a></p>
+      </div>
+
+      <div class="footer-some">
+        <p>Sociala medier</p>
+        <div class="some-icons">
+          <a href="https://www.instagram.com/" target="_blank">
+            <img
+              src="@/assets/images/instagram-icon.svg"
+              width="25px"
+              height="25px"
+              alt="Sociala medier ikon för Instagram"
+            />
+          </a>
+          <a href="https://www.facebook.com/" target="_blank">
+            <img
+              src="@/assets/images/facebook-icon.svg"
+              width="25px"
+              height="25px"
+              alt="Sociala medier ikon för Facebook"
+            />
+          </a>
+        </div>
       </div>
     </div>
   </footer>
@@ -39,7 +44,7 @@ import MainLogo from '@/components/MainLogo.vue';
 
 <style scoped lang="scss">
 footer {
-  width: 100vw;
+  width: 100%;
   background-color: $skogsgron;
   color: $sand;
   font-family: $body-font;
@@ -49,7 +54,7 @@ footer {
   gap: $spacing;
   align-items: center;
   text-align: center;
-  padding: 20px;
+  padding: $spacing;
 
   a {
     text-decoration: none;
@@ -60,6 +65,7 @@ footer {
 .footer-logo {
   cursor: pointer;
   display: flex;
+  align-items: center;
   gap: 15px;
 
   h2 {
@@ -99,6 +105,42 @@ footer {
       filter: brightness(0) saturate(100%) invert(100%) sepia(62%) saturate(587%) hue-rotate(308deg) brightness(96%)
         contrast(92%);
     }
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 834px) {
+  .footer-logo {
+    h2 {
+      font-size: pxtorem(54px);
+    }
+  }
+  
+  .footer-contact {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 2.2rem;
+    font-size: pxtorem(21px);
+  }
+
+  .footer-map-tel {
+    text-align: left;
+  }
+  
+  .some-icons {
+    img {
+      transform: scale(1.5);
+    }
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1512px) {
+  .footer-contact {
+    line-height: 2.7rem;
+    font-size: pxtorem(25px);
   }
 }
 </style>
