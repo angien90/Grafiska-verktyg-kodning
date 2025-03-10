@@ -87,6 +87,10 @@ p {
   gap: 5px;
   cursor: pointer;
   z-index: 2;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
 }
 
 .bar {
