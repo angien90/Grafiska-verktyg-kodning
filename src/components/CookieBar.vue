@@ -47,25 +47,50 @@ const rejectCookies = () => {
   background-color: $greige;
   width: 100%;
   z-index: 1000;
+  padding: $spacing;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: 768px) { // Tablet
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: $spacing $spacing * 2; 
+  }
+
+  @media (min-width: 1024px) { // Desktop
+    flex: 2; 
+    justify-content: center;
+    padding: $spacing $spacing * 3; 
+  }
 }
 
 h3 {
   font-family: $heading-font;
   font-size: 1.6rem;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   text-transform: uppercase;
-  padding-top: $spacing;
-  padding-left: $spacing;
-  padding-right: $spacing;
+  padding: 5px;
+  text-align: left;
 }
 
 p {
   font-family: $body-font;
   font-size: 1rem;
   margin-top: 0;
-  text-align: start;
-  padding-left: $spacing;
-  padding-right: $spacing;
+  margin-bottom: 10px;
+  text-align: center;
+  padding: 0 0 5px 0; 
+
+  @media (min-width: 768px) { 
+    margin-right: 20px; 
+  }
+  
+  @media (min-width: 1024px) { 
+    flex: 2; 
+    text-align: center;
+  }
 }
 
 a {
@@ -76,6 +101,18 @@ a {
 .button-container {
   display: flex;
   justify-content: space-between;
+  gap: 20px;
+  align-items: center;
   margin-top: 0;
+
+  @media (min-width: 768px) { 
+   margin-left: auto;
+  }
+
+  @media (min-width: 1024px) { 
+    margin-left: auto; 
+  }
 }
+
+
 </style>
