@@ -75,6 +75,7 @@
   flex-direction: column;
   margin: $spacing 0;
   padding: 0;
+  border: solid black 5px;
 
   .cardWrapper {
     width: 100%;
@@ -83,6 +84,7 @@
     justify-content: center;
     margin: 0;
     padding: 0;
+    border: solid green 2px;
 
     .card {
       background-color: $greige;
@@ -96,6 +98,7 @@
       box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
       margin-top: 0;
       margin-bottom: 25px;
+      border: solid red 2px;
 
       .picture {
         display: block;
