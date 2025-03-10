@@ -23,11 +23,8 @@ const isSubscribed = ref(false);
 
       <span class="form-2">
         <input class="checkbox" type="checkbox" id="newsletter" name="newsletter" v-model="isSubscribed" />
-        <label class="newsletter-information" for="newsletter">
-          Ja tack! Jag vill få nyhetsbrev från Gläntan med unika erbjudanden och inspiration om naturupplevelser.</label
-        >
+        <label class="newsletter-information" for="newsletter">Ja tack! Jag vill få nyhetsbrev från Gläntan med unika erbjudanden och inspiration om naturupplevelser.</label>
       </span>
-
       <PrimaryButton buttonText="Prenumerera" />
     </form>
   </span>
@@ -41,53 +38,47 @@ const isSubscribed = ref(false);
   margin-bottom: $spacing;
 }
 
+h3 {
+    font-family: $heading-font;
+    font-size: 2.25rem;
+    margin-bottom: $spacing;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: $spacing;
+    padding-left: $spacing;
+    padding-right: $spacing;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+
+  	@media (min-width: 1512px) {
+      grid-column: 1 / span 4; 
+	}
+}
+
 form {
   @media (min-width: 834px) {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto auto;
     align-items: start;
   }
 }
 
-h3 {
-	font-family: $heading-font;
-	font-size: 2rem;
-	margin-bottom: $spacing;
-	text-transform: uppercase;
-  text-align: center;
-	padding-top: $spacing;
-	padding-left: $spacing;
-	padding-right: $spacing;
-  display: block;
-  
-
-  	@media (min-width: 1512px) {
-      grid-column: 1 / span 4; 
-    	font-size: 2.5rem;
-	}
-}
-
 .form-1 {
   padding-left: 10px;
-  padding-right: 0;
-  padding-top: 0;
   padding-bottom: $spacing;
   text-align: left;
-  grid-template-rows: auto auto;
-  gap: $spacing;
   width: 100%;
   
   @media (min-width: 834px) {
     grid-column: 1 / span 2;
+    margin-left: 40px;
   }
-
-	@media (min-width: 1512px) { 
-	}
 }
 
 .epost {
   font-family: $heading-font;
+  font-size: 1.5rem;
   text-align: start;
   font-size: $spacing;
   text-transform: uppercase;
@@ -95,19 +86,26 @@ h3 {
 
   @media (min-width: 834px) {
     grid-column: 1 / span 2;
+    margin-left: 5px;
   } 
 }
 
 .input {
   height: 40px;
+  width: 100%;
   border-color: 1px solid $sand;
   border-radius: 15px;
   border: 1px solid $sand;
-  width: 100%;
   background-color: $sand;
+  padding: 8px;
 
   @media (min-width: 834px) {
     grid-column: 1 / span 2;
+    width: 90%;
+  }
+
+  @media (min-width: 1512px) {
+    width: 70%;
   }
 }
 
@@ -121,8 +119,10 @@ h3 {
 
   @media (min-width: 834px) {
     grid-column: 3 / span 2;
+    margin-right: 40px;
     padding-left: $spacing;
-    
+    padding-top: 0;
+    align-self: center;
   }
 }
 
