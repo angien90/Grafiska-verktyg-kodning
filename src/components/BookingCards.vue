@@ -135,7 +135,7 @@
         h3 {
           font-family: $heading-font;
           font-weight: 400;
-          font-size: pxtorem(25px);
+          font-size: pxtorem(20px);
           margin-top: 0;
           text-transform: uppercase;
         }
@@ -143,14 +143,14 @@
         h4 {
           font-family: $heading-font;
           font-weight: 400;
-          font-size: pxtorem(20px);
+          font-size: pxtorem(16px);
           margin-top: 0;
           text-transform: uppercase;
         }
 
         p {
           font-family: $body-font;
-          font-size: 1rem;
+          font-size: pxtorem(16px);
           margin-top: 0;
           margin-bottom: 15px; //ej specat
         }
@@ -223,11 +223,11 @@
           padding-left: 15px; //ej specat
 
           h3 {
-            font-size: pxtorem(38px);
+            font-size: pxtorem(36px);
           }
 
           h4 {
-            font-size: pxtorem(30px);
+            font-size: pxtorem(25px);
           }
 
           p {
