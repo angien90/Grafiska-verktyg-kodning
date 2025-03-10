@@ -14,7 +14,7 @@
               Somna till sjöns stilla vågor och vakna med soluppgången. En naturnära och rofylld tillflyktsort med
               magisk utsikt.
             </p>
-            <h4>Från 1 399 kr</h4>
+            <p class="price" aria-label="Pris från 1 399 kr">Från 1 399 kr</p>
           </div>
         </div>
       </article>
@@ -32,7 +32,7 @@
               Bo uppe i träden och låt dig smälta samman med naturen. Den spegelblanka fasaden skapar en unik,
               kamouflerad upplevelse mitt i skogens ro.
             </p>
-            <h4>Från 1 758 kr</h4>
+            <p class="price" aria-label="Pris från 1758 kr">Från 1 758 kr</p>
           </div>
         </div>
       </article>
@@ -50,7 +50,7 @@
               Njut av total avskildhet i en mysig koja, djupt inne i skogen. Här får du ro, stillhet och en chans att
               komma nära naturen på riktigt.
             </p>
-            <h4>Från 1 549 kr</h4>
+            <p class="price" aria-label="Pris från 1549 kr">Från 1 549 kr</p>
           </div>
         </div>
       </article>
@@ -68,7 +68,7 @@
               Samla familjen kring elden i en avskild koja och njut av lugnet i skogen. En plats för gemenskap och
               mysiga stunder.
             </p>
-            <h4>Från 2 129 kr</h4>
+            <p class="price" aria-label="Pris från 2129 kr">Från 2 129 kr</p>
           </div>
         </div>
       </article>
@@ -137,7 +137,7 @@
           text-transform: uppercase;
         }
 
-        h4 {
+        .price {
           font-family: $heading-font;
           font-weight: 400;
           font-size: pxtorem(16px);
@@ -177,7 +177,7 @@
         padding: 25px;
         margin-bottom: 50px; //Minimiavstånd satt till 25px. Ökade eftersom det kändes för lite.
 
-        h4 {
+        .price {
         padding-top: 25px;
         }
       }
@@ -227,7 +227,7 @@
             font-size: pxtorem(36px);
           }
 
-          h4 {
+          .price {
             font-size: pxtorem(25px);
           }
 
