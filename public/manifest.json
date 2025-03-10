@@ -1,0 +1,21 @@
+//Denna behövs för att kunna spara ner Gläntan med logotyp som genväg direkt på hemskärmen.
+{
+    "name": "Gläntan",
+    "short_name": "Gläntan",
+    "start_url": "https://medieinstitutet.github.io/fed24d-grafiska-verktyg-panterkameleonterna/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "description": "Gläntans hyrstugor",
+    "icons": [
+      {
+        "src": "/assets/images/logga.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "/assets/images/logga.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+  }
