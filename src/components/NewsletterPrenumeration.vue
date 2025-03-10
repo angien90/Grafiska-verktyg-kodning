@@ -1,31 +1,40 @@
-<script>
+<script setup>
 import PrimaryButton from './PrimaryButton.vue';
-import { ref } from 'vue';
-
-export default {
-  components: {
-    PrimaryButton,
-  },
-};
+import { ref, computed } from 'vue';
 
 const email = ref('');
 const isSubscribed = ref(false);
+
+const isDisabled = computed(() => {
+  return !email.value || !isSubscribed.value;
+});
+
+const submitForm = () => {
+  if (!isDisabled.value) {
+    console.log("Formulär skickat!", email.value);
+    alert(`Tack för att du prenumererar, ${email.value}!`);
+    
+    // Återställ formuläret
+    email.value = '';
+    isSubscribed.value = false;
+  }
+};
 </script>
 
 <template>
   <span class="grid-layout">
     <h3>Prenumerera på vårt nyhetsbrev</h3>
-    <form>
+    <form @submit.prevent="submitForm">
       <span class="form-1">
         <label class="epost" for="epost">Mailadress</label><br />
-        <input class="input" type="email" id="epost" name="epost" v-model="email" />
+        <input class="input" type="email" id="epost" name="epost" v-model="email" required autocomplete="email" aria-label="Ange din e-postadress" />
       </span>
 
       <span class="form-2">
         <input class="checkbox" type="checkbox" id="newsletter" name="newsletter" v-model="isSubscribed" />
         <label class="newsletter-information" for="newsletter">Ja tack! Jag vill få nyhetsbrev från Gläntan med unika erbjudanden och inspiration om naturupplevelser.</label>
       </span>
-      <PrimaryButton buttonText="Prenumerera" />
+      <PrimaryButton buttonText="Prenumerera" :disabled="isDisabled" :class="{ disabled: isDisabled }" />
     </form>
   </span>
 </template>
@@ -36,6 +45,11 @@ const isSubscribed = ref(false);
   padding-left: $spacing;
   padding-right: $spacing;
   margin-bottom: $spacing;
+}
+
+.primary-button.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
 h3 {
@@ -60,19 +74,20 @@ form {
   @media (min-width: 834px) {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    align-items: start;
   }
 }
 
 .form-1 {
-  padding-left: 10px;
-  padding-bottom: $spacing;
   text-align: left;
-  width: 100%;
+  padding-left: 10px;
+  padding-bottom: 0;
   
   @media (min-width: 834px) {
     grid-column: 1 / span 2;
-    margin-left: 40px;
+  }
+
+  @media (min-width: 1512px) {
+    padding-left: 40px;
   }
 }
 
@@ -80,9 +95,9 @@ form {
   font-family: $heading-font;
   font-size: 1.5rem;
   text-align: start;
-  font-size: $spacing;
   text-transform: uppercase;
   width: 100%;
+
 
   @media (min-width: 834px) {
     grid-column: 1 / span 2;
@@ -114,15 +129,18 @@ form {
   align-items: start;
   gap: 10px;
   padding-top: $spacing;
-  padding-left: 10px;
   padding-right: 10px;
 
   @media (min-width: 834px) {
     grid-column: 3 / span 2;
-    margin-right: 40px;
     padding-left: $spacing;
     padding-top: 0;
     align-self: center;
+    padding-top: $spacing;  
+  }
+
+  @media (min-width: 1512px) {
+  margin-right: 40px;
   }
 }
 
@@ -158,7 +176,7 @@ form {
   flex: 1;
 
   @media (min-width: 834px) {
-    grid-column: 3 / span 2;
+    grid-column: 3 / span 2; 
   }
 }
 
