@@ -71,6 +71,7 @@ p {
 
 	@media (min-width: 834px) {
 		font-size: 1.25rem;
+		padding-right: 0;
 	}
 
 	@media (min-width: 1512px) { 
@@ -140,6 +141,13 @@ p {
 		grid-column: 1 / span 2;
 		padding-right: 100px;
 		margin-top: $spacing;
+		
+  }
+
+  @media (min-width: 1512px) {
+		padding-left: $spacing;
+		margin-left: $spacing;
+		margin-right: $spacing;
   }
 }
 
