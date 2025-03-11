@@ -59,7 +59,7 @@ h1 {
   font-size: 5rem; 
   margin: 0 0 30px 0; 
   z-index: 1; 
-  text-shadow: 0 1px 2px 0 rgba(0, 0, 0, 1);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 p {
