@@ -65,13 +65,13 @@ h3 {
     overflow-wrap: break-word;
     white-space: normal;
 
-  	@media (min-width: 1512px) {
+  	@media (min-width: 1280px) {
       grid-column: 1 / span 4; 
 	}
 }
 
 form {
-  @media (min-width: 834px) {
+  @media (min-width: 768px) {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
   }
@@ -82,11 +82,11 @@ form {
   padding-left: 10px;
   padding-bottom: 0;
   
-  @media (min-width: 834px) {
+  @media (min-width: 768px) {
     grid-column: 1 / span 2;
   }
 
-  @media (min-width: 1512px) {
+  @media (min-width: 1280px) {
     padding-left: 40px;
   }
 }
@@ -99,7 +99,7 @@ form {
   width: 100%;
 
 
-  @media (min-width: 834px) {
+  @media (min-width: 768px) {
     grid-column: 1 / span 2;
     margin-left: 5px;
   } 
@@ -114,12 +114,12 @@ form {
   background-color: $sand;
   padding: 8px;
 
-  @media (min-width: 834px) {
+  @media (min-width: 768px) {
     grid-column: 1 / span 2;
     width: 90%;
   }
 
-  @media (min-width: 1512px) {
+  @media (min-width: 1280px) {
     width: 70%;
   }
 }
@@ -131,7 +131,7 @@ form {
   padding-top: $spacing;
   padding-right: 10px;
 
-  @media (min-width: 834px) {
+  @media (min-width: 768px) {
     grid-column: 3 / span 2;
     padding-left: $spacing;
     padding-top: 0;
@@ -139,7 +139,7 @@ form {
     padding-top: $spacing;  
   }
 
-  @media (min-width: 1512px) {
+  @media (min-width: 1280px) {
   margin-right: 40px;
   }
 }
@@ -175,13 +175,13 @@ form {
   line-height: 1.4;
   flex: 1;
 
-  @media (min-width: 834px) {
+  @media (min-width: 768px) {
     grid-column: 3 / span 2; 
   }
 }
 
 .primary-button{
-  @media (min-width: 834px) {
+  @media (min-width: 768px) {
     grid-column: 1 / span 4;
   }
 }

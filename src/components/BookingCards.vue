@@ -148,8 +148,7 @@
   }
 }
 
-/* MEDIA QUERY FÖR STÖRRE SKÄRMAR (>600px) */
-@media (min-width: 800px) {
+@media (min-width: 768px) {
   .cabins {
     flex-direction: row;
     justify-content: space-evenly;
@@ -177,8 +176,7 @@
   }
 }
 
-/* MEDIA QUERY FÖR STÖRRE SKÄRMAR (>1200px) */
-@media (min-width: 1500px) {
+@media (min-width: 1280px) {
   .cabins {
     width: 100%;
     margin-bottom: 0;

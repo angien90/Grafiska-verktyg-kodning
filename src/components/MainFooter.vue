@@ -109,7 +109,7 @@ footer {
 }
 
 /* Tablet */
-@media screen and (min-width: 834px) {
+@media screen and (min-width: 768px) {
   footer {
     justify-content: space-around;
   }
@@ -141,7 +141,7 @@ footer {
 }
 
 /* Desktop */
-@media screen and (min-width: 1512px) {
+@media screen and (min-width: 1280px) {
   .footer-contact {
     line-height: 2.7rem;
     font-size: pxtorem(25px);

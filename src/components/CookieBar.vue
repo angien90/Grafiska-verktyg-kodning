@@ -59,7 +59,7 @@ const rejectCookies = () => {
     padding: $spacing $spacing * 2; 
   }
 
-  @media (min-width: 1024px) { // Desktop
+  @media (min-width: 1280px) { // Desktop
     flex: 2; 
     justify-content: center;
     padding: $spacing $spacing * 3; 
@@ -87,7 +87,7 @@ p {
     margin-right: 20px; 
   }
   
-  @media (min-width: 1024px) { 
+  @media (min-width: 1280px) { 
     flex: 2; 
     text-align: center;
   }
@@ -109,7 +109,7 @@ a {
    margin-left: auto;
   }
 
-  @media (min-width: 1024px) { 
+  @media (min-width: 1280px) { 
     margin-left: auto; 
   }
 }

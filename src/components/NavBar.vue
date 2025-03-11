@@ -10,13 +10,13 @@
 </template>
 
 <style lang="scss" scoped>
-@media (max-width: 799px) {
+@media (max-width: 767px) {
   nav {
     display: none;
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 768px) {
   nav {
     background-color: $skogsgron;
     width: 100%;
@@ -61,7 +61,7 @@
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1280px) {
   nav {
     height: 130px;
 
