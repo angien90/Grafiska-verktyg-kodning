@@ -132,7 +132,6 @@ h1 {
 }
 
 .mobile-menu li {
-  margin-top: px;
   padding: 10px 0;
   text-align: left;
   font-size: 18px;
