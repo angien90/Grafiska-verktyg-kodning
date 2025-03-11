@@ -1,5 +1,5 @@
 <script setup>
-import MainLogo from '@/components/MainLogo.vue';
+import MainLogo from "@/components/MainLogo.vue";
 </script>
 
 <template>
@@ -119,7 +119,7 @@ footer {
       font-size: pxtorem(54px);
     }
   }
-  
+
   .footer-contact {
     display: flex;
     width: 50%;
@@ -132,7 +132,7 @@ footer {
   .footer-map-tel {
     text-align: left;
   }
-  
+
   .some-icons {
     img {
       transform: scale(1.5);

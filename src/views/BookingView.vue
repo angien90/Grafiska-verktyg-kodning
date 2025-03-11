@@ -6,8 +6,7 @@ import NewMobileHeader from "../components/NewMobileHeader.vue";
 </script>
 
 <template>
-
-   <NewMobileHeader />
+  <NewMobileHeader />
 
   <div>
     <NavBar />

@@ -1,7 +1,7 @@
 <script setup>
 defineProps({
   buttonText: String,
-  disabled: Boolean
+  disabled: Boolean,
 });
 </script>
 
@@ -14,7 +14,7 @@ defineProps({
 <style lang="scss" scoped>
 .primary-button {
   @include primary-button;
-  
+
   &.disabled {
     opacity: 0.5;
     cursor: not-allowed;

@@ -2,20 +2,21 @@
 
 Gläntan är ett naturnära boendekoncept där lugnet, skogen och sjön står i centrum. Här skapas en plats för återhämtning, med boenden som smälter in i naturen och upplevelser som följer skogens rytm. Designen är inspirerad av nordisk enkelhet – där varje detalj bjuder in till stillhet och närvaro.
 
+## Projektgruppen
 
-## Projektgruppen 
 ### Designer
+
 - [Tea Grossman](https://github.com/TeaGross)
 - [Ellinor Johansson](https://github.com/ellinorjohansson)
 - [Alexandra Johansen](https://github.com/axandranathalie)
 - [Karin Henriksson](https://github.com/KarinHson)
 
 ### Utvecklare
-- [David Brunni](https://github.com/DavidBrunni) 	
-- [Marie Lenvik](https://github.com/M-Lenvik) 
-- [Vy Petersson](https://github.com/tgvie) 
-- [Angelica Nylander](https://github.com/angien90) 
 
+- [David Brunni](https://github.com/DavidBrunni)
+- [Marie Lenvik](https://github.com/M-Lenvik)
+- [Vy Petersson](https://github.com/tgvie)
+- [Angelica Nylander](https://github.com/angien90)
 
 ## Designriktlinjer
 
@@ -50,7 +51,8 @@ För att skapa en lekfull men harmonisk känsla har vi valt Lilita One för rubr
 
 Knapparna har en mjuk, rundad form för att kännas inbjudande och användarvänliga. Hamburgermenyn och navbaren är enkel och luftig för att underlätta navigering och ge en friktionsfri upplevelse. Layouten är minimalistisk med fokus på stora bilder och tydliga sektioner för att framhäva innehållet utan att skapa visuell stress.
 
-## 🧑‍💻 Tech Stack 
+## 🧑‍💻 Tech Stack
+
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
@@ -69,9 +71,10 @@ Knapparna har en mjuk, rundad form för att kännas inbjudande och användarvän
 
 ![ESLint](https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white)
 
-![Prettier](https://img.shields.io/badge/prettier-%23F7B93E.svg?style=for-the-badge&logo=prettier&logoColor=black) 
+![Prettier](https://img.shields.io/badge/prettier-%23F7B93E.svg?style=for-the-badge&logo=prettier&logoColor=black)
 
-### Verktyg 
+### Verktyg
+
 ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
@@ -79,65 +82,65 @@ Knapparna har en mjuk, rundad form för att kännas inbjudande och användarvän
 ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
 
 ## ⚙️ Installation
+
 För att komma igång med projektet behöver du npm installerat på din dator. Följ nedan steg;
 
 1. **Klona repot:**  
-Öppna din terminal och kör följande kommando för att klona projektet:
+   Öppna din terminal och kör följande kommando för att klona projektet:
 
 ```bash
 git clone https://medieinstitutet.github.io/fed24d-grafiska-verktyg-panterkameleonterna
 ```
 
-Navigera sedan in i projektkatalogen: 
+Navigera sedan in i projektkatalogen:
+
 ```bash
 cd fed24d-grafiska-verktyg-panterkameleonterna
 ```
 
 2. **Installera projektberoenden:**  
-Kör följande kommando för att installera alla nödvändiga beroenden:
+   Kör följande kommando för att installera alla nödvändiga beroenden:
 
 ```bash
 npm install
 ```
 
-3. **Starta utvecklingsservern:**
-För att starta projektet lokalt, kör:
+3. **Starta utvecklingsservern:** För att starta projektet lokalt, kör:
 
 ```bash
 npm run dev
 ```
 
-4. **Förhandsgranska projektet:**
-Om du vill förhandsgranska projektet i en produktionsliknande miljö utan att bygga det för produktion kan du använda följande kommando:
+4. **Förhandsgranska projektet:** Om du vill förhandsgranska projektet i en produktionsliknande miljö utan att bygga det för produktion kan du använda följande kommando:
 
 ```bash
 npm preview
 ```
 
-5. **Bygg projektet för produktion:**
-När du är redo och vill bygga projektet för produktion:
+5. **Bygg projektet för produktion:** När du är redo och vill bygga projektet för produktion:
 
 ```bash
 npm build
 ```
 
 ## Printbilder från Figma
+
 Mer detaljerade bilder över designen ligger i mappen assets/screenshot design.
 
-### Grafisk profil och komponenter 
+### Grafisk profil och komponenter
+
 ![Grafisk profil och komponenter](https://github.com/user-attachments/assets/6243b069-1bab-4b73-a421-d859b7eebcbc)
 
-### Design för mobilen 
+### Design för mobilen
+
 ![Mobile design](https://github.com/user-attachments/assets/0066319a-5470-45a3-bc5f-48dd3d45425b)
 
 ### Design för tablet
+
 ![Tablet design](https://github.com/user-attachments/assets/881c60cc-0601-4d70-b85c-0101f19ec2d7)
 
 ### Design för desktop
+
 ![Desktop design](https://github.com/user-attachments/assets/2fd2b74a-b5d1-4d87-8d44-9b17fb3f7f13)
-
-
-
-
 
 ## Printbilder från färdig webbplats

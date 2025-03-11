@@ -1,8 +1,8 @@
 <script setup>
-import PrimaryButton from './PrimaryButton.vue';
-import { ref, computed } from 'vue';
+import PrimaryButton from "./PrimaryButton.vue";
+import { ref, computed } from "vue";
 
-const email = ref('');
+const email = ref("");
 const isSubscribed = ref(false);
 
 const isDisabled = computed(() => {
@@ -13,9 +13,9 @@ const submitForm = () => {
   if (!isDisabled.value) {
     console.log("Formulär skickat!", email.value);
     alert(`Tack för att du prenumererar, ${email.value}!`);
-    
+
     // Återställ formuläret
-    email.value = '';
+    email.value = "";
     isSubscribed.value = false;
   }
 };
@@ -27,12 +27,24 @@ const submitForm = () => {
     <form @submit.prevent="submitForm">
       <span class="form-1">
         <label class="epost" for="epost">Mailadress</label><br />
-        <input class="input" type="email" id="epost" name="epost" v-model="email" required autocomplete="email" aria-label="Ange din e-postadress" />
+        <input
+          class="input"
+          type="email"
+          id="epost"
+          name="epost"
+          v-model="email"
+          required
+          autocomplete="email"
+          aria-label="Ange din e-postadress"
+        />
       </span>
 
       <span class="form-2">
         <input class="checkbox" type="checkbox" id="newsletter" name="newsletter" v-model="isSubscribed" />
-        <label class="newsletter-information" for="newsletter">Ja tack! Jag vill få nyhetsbrev från Gläntan med unika erbjudanden och inspiration om naturupplevelser.</label>
+        <label class="newsletter-information" for="newsletter"
+          >Ja tack! Jag vill få nyhetsbrev från Gläntan med unika erbjudanden och inspiration om
+          naturupplevelser.</label
+        >
       </span>
       <PrimaryButton buttonText="Prenumerera" :disabled="isDisabled" :class="{ disabled: isDisabled }" />
     </form>
@@ -53,21 +65,21 @@ const submitForm = () => {
 }
 
 h3 {
-    font-family: $heading-font;
-    font-size: 2.25rem;
-    margin-bottom: $spacing;
-    text-transform: uppercase;
-    text-align: center;
-    padding-top: $spacing;
-    padding-left: $spacing;
-    padding-right: $spacing;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    white-space: normal;
+  font-family: $heading-font;
+  font-size: 2.25rem;
+  margin-bottom: $spacing;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: $spacing;
+  padding-left: $spacing;
+  padding-right: $spacing;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
 
-  	@media (min-width: 1280px) {
-      grid-column: 1 / span 4; 
-	}
+  @media (min-width: 1280px) {
+    grid-column: 1 / span 4;
+  }
 }
 
 form {
@@ -81,7 +93,7 @@ form {
   text-align: left;
   padding-left: 10px;
   padding-bottom: 0;
-  
+
   @media (min-width: 768px) {
     grid-column: 1 / span 2;
   }
@@ -98,11 +110,10 @@ form {
   text-transform: uppercase;
   width: 100%;
 
-
   @media (min-width: 768px) {
     grid-column: 1 / span 2;
     margin-left: 5px;
-  } 
+  }
 }
 
 .input {
@@ -135,11 +146,11 @@ form {
     padding-left: $spacing;
     padding-top: 0;
     align-self: center;
-    padding-top: $spacing;  
+    padding-top: $spacing;
   }
 
   @media (min-width: 1280px) {
-  margin-right: 40px;
+    margin-right: 40px;
   }
 }
 
@@ -159,7 +170,7 @@ form {
 }
 
 .checkbox:checked::after {
-  content: '✔';
+  content: "✔";
   font-size: 18px;
   color: #333;
   position: absolute;
@@ -175,11 +186,11 @@ form {
   flex: 1;
 
   @media (min-width: 768px) {
-    grid-column: 3 / span 2; 
+    grid-column: 3 / span 2;
   }
 }
 
-.primary-button{
+.primary-button {
   @media (min-width: 768px) {
     grid-column: 1 / span 4;
   }

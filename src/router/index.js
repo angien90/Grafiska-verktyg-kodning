@@ -1,10 +1,10 @@
-import { createRouter, createWebHistory } from 'vue-router';
-import HomeView from '../views/HomeView.vue';
-import BookingView from '../views/BookingView.vue';
+import { createRouter, createWebHistory } from "vue-router";
+import HomeView from "../views/HomeView.vue";
+import BookingView from "../views/BookingView.vue";
 
 const routes = [
-  { path: '/', component: HomeView },
-  { path: '/booking', component: BookingView },
+  { path: "/", component: HomeView },
+  { path: "/booking", component: BookingView },
 ];
 
 const router = createRouter({
