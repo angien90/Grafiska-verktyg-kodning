@@ -2738,7 +2738,7 @@ C 243.52 490.69 253.41 490.64 260.00 489.00 Z"
 
 <style scoped lang="scss">
 .logo {
-  width: 70px;
+  width: 50px;
   height: auto;
 }
 

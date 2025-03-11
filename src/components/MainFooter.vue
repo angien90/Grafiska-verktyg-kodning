@@ -14,7 +14,7 @@ import MainLogo from '@/components/MainLogo.vue';
     <div class="footer-contact">
       <div class="footer-map-tel">
         <p><a href="https://www.google.com/maps" target="_blank">Hitta hit</a></p>
-        <p>Tele: <a href="tel:+4677777777">+46 777 777 77</a></p>
+        <p><a href="tel:+4677777777">+46 777 777 77</a></p>
       </div>
 
       <div class="footer-some">
@@ -110,6 +110,10 @@ footer {
 
 /* Tablet */
 @media screen and (min-width: 834px) {
+  footer {
+    justify-content: space-around;
+  }
+
   .footer-logo {
     h2 {
       font-size: pxtorem(54px);
