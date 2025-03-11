@@ -4,12 +4,12 @@ import MainLogo from '@/components/MainLogo.vue';
 
 <template>
   <footer>
-    <a href="/">
+    <RouterLink to="/">
       <div class="footer-logo">
         <MainLogo />
         <h2>Gläntan</h2>
       </div>
-    </a>
+    </RouterLink>
 
     <div class="footer-contact">
       <div class="footer-map-tel">
@@ -23,16 +23,16 @@ import MainLogo from '@/components/MainLogo.vue';
           <a href="https://www.instagram.com/" target="_blank">
             <img
               src="@/assets/images/instagram-icon.svg"
-              width="25px"
-              height="25px"
+              width="25"
+              height="25"
               alt="Sociala medier ikon för Instagram"
             />
           </a>
           <a href="https://www.facebook.com/" target="_blank">
             <img
               src="@/assets/images/facebook-icon.svg"
-              width="25px"
-              height="25px"
+              width="25"
+              height="25"
               alt="Sociala medier ikon för Facebook"
             />
           </a>
