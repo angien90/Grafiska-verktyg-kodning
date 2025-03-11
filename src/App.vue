@@ -1,6 +1,6 @@
 <script setup>
-import { ref } from 'vue';
-import HomeView from './views/HomeView.vue';
+import { ref } from "vue";
+import HomeView from "./views/HomeView.vue";
 </script>
 
 <template>

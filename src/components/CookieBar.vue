@@ -1,25 +1,25 @@
 <script setup>
-import { ref, onMounted } from 'vue';
-import PrimaryButton from './PrimaryButton.vue';
-import SecondaryButton from './SecondaryButton.vue';
+import { ref, onMounted } from "vue";
+import PrimaryButton from "./PrimaryButton.vue";
+import SecondaryButton from "./SecondaryButton.vue";
 
 const showCookiePopup = ref(false);
 
 // Kolla om användaren redan har gjort ett val
 onMounted(() => {
-  if (!localStorage.getItem('cookiesAccepted')) {
+  if (!localStorage.getItem("cookiesAccepted")) {
     showCookiePopup.value = true;
   }
 });
 
 // Spara användarens val och dölj popupen
 const acceptCookies = () => {
-  localStorage.setItem('cookiesAccepted', 'true');
+  localStorage.setItem("cookiesAccepted", "true");
   showCookiePopup.value = false;
 };
 
 const rejectCookies = () => {
-  localStorage.setItem('cookiesAccepted', 'false');
+  localStorage.setItem("cookiesAccepted", "false");
   showCookiePopup.value = false;
 };
 </script>
@@ -52,17 +52,19 @@ const rejectCookies = () => {
   flex-direction: column;
   align-items: center;
 
-  @media (min-width: 768px) { // Tablet
+  @media (min-width: 768px) {
+    // Tablet
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: $spacing $spacing * 2; 
+    padding: $spacing $spacing * 2;
   }
 
-  @media (min-width: 1280px) { // Desktop
-    flex: 2; 
+  @media (min-width: 1280px) {
+    // Desktop
+    flex: 2;
     justify-content: center;
-    padding: $spacing $spacing * 3; 
+    padding: $spacing $spacing * 3;
   }
 }
 
@@ -81,14 +83,14 @@ p {
   margin-top: 0;
   margin-bottom: 10px;
   text-align: center;
-  padding: 0 0 5px 0; 
+  padding: 0 0 5px 0;
 
-  @media (min-width: 768px) { 
-    margin-right: 20px; 
+  @media (min-width: 768px) {
+    margin-right: 20px;
   }
-  
-  @media (min-width: 1280px) { 
-    flex: 2; 
+
+  @media (min-width: 1280px) {
+    flex: 2;
     text-align: center;
   }
 }
@@ -105,14 +107,12 @@ a {
   align-items: center;
   margin-top: 0;
 
-  @media (min-width: 768px) { 
-   margin-left: auto;
+  @media (min-width: 768px) {
+    margin-left: auto;
   }
 
-  @media (min-width: 1280px) { 
-    margin-left: auto; 
+  @media (min-width: 1280px) {
+    margin-left: auto;
   }
 }
-
-
 </style>

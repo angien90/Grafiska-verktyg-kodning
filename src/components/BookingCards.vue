@@ -4,7 +4,10 @@
       <article class="cardWrapper">
         <div class="card">
           <figure class="picture">
-            <img src="../assets/images/sjostugan.jpg" alt="Stuga med brant lutande tak och stora glaspartier i skogen.">
+            <img
+              src="../assets/images/sjostugan.jpg"
+              alt="Stuga med brant lutande tak och stora glaspartier i skogen."
+            />
           </figure>
           <div class="infotext">
             <h3>Sjöstugan</h3>
@@ -20,7 +23,10 @@
       <article class="cardWrapper">
         <div class="card">
           <figure class="picture">
-            <img src="../assets/images/spegelboet.jpg" alt="Kvadratisk spegelbeklädd kub till stuga uppe i träden. Entré via hängbro.">
+            <img
+              src="../assets/images/spegelboet.jpg"
+              alt="Kvadratisk spegelbeklädd kub till stuga uppe i träden. Entré via hängbro."
+            />
           </figure>
           <div class="infotext">
             <h3>Spegelboet</h3>
@@ -36,7 +42,7 @@
       <article class="cardWrapper">
         <div class="card">
           <figure class="picture">
-            <img src="../assets/images/trakoja.jpg" alt="Stuga med brant lutande tak och badtunna i skogen.">
+            <img src="../assets/images/trakoja.jpg" alt="Stuga med brant lutande tak och badtunna i skogen." />
           </figure>
           <div class="infotext">
             <h3>Träkojan</h3>
@@ -52,7 +58,7 @@
       <article class="cardWrapper">
         <div class="card">
           <figure class="picture">
-            <img src="../assets/images/eldnastet.jpg" alt="Eldstad med sprakande brasa.">
+            <img src="../assets/images/eldnastet.jpg" alt="Eldstad med sprakande brasa." />
           </figure>
           <div class="infotext">
             <h3>Eldnästet</h3>
@@ -97,24 +103,23 @@
       margin-bottom: 25px;
       padding: 25px;
 
-        .picture {
-          width: 260px;
-          height: 290px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          overflow: hidden;
-          border-radius: 5px;
-          margin: 0;
-          padding: 0;
+      .picture {
+        width: 260px;
+        height: 290px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        border-radius: 5px;
+        margin: 0;
+        padding: 0;
 
-          img{
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-          }
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
         }
-     
+      }
 
       .infotext {
         width: 260px;
@@ -169,7 +174,7 @@
         margin-bottom: 50px; //Minimiavstånd satt till 25px. Ökade eftersom det kändes för lite.
 
         .price {
-        padding-top: 25px;
+          padding-top: 25px;
         }
       }
     }
@@ -199,10 +204,9 @@
           width: 50%;
 
           height: 385px;
-            width: 290px;
-            display: block;
-            object-fit: cover;
-
+          width: 290px;
+          display: block;
+          object-fit: cover;
         }
 
         .infotext {

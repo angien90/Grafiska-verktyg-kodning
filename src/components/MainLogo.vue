@@ -2,37 +2,42 @@
 import { ref, onMounted } from "vue";
 import { gsap } from "gsap";
 defineProps({
-    size: { type: String, default: "150px" }
-})
+  size: { type: String, default: "150px" },
+});
 
 onMounted(() => {
-  gsap.fromTo("#moon", 
-    {   rotation: -60,
-        transformOrigin: "center center",
-        opacity: 0,
-    },
-    {   duration: 2, 
-        rotation: 0,
-        yoyo: true,
-        repeat: -1,
-        repeatDelay: 1,
-        opacity: 1,
-        ease: "power2.inOut",
-        fill: "#FFD700",
-        filter: "drop-shadow(0 0 15px rgba(255, 223, 0, 0.8))"
+  gsap.fromTo(
+    "#moon",
+    { rotation: -60, transformOrigin: "center center", opacity: 0 },
+    {
+      duration: 2,
+      rotation: 0,
+      yoyo: true,
+      repeat: -1,
+      repeatDelay: 1,
+      opacity: 1,
+      ease: "power2.inOut",
+      fill: "#FFD700",
+      filter: "drop-shadow(0 0 15px rgba(255, 223, 0, 0.8))",
     }
-    );
+  );
 });
 </script>
 
 <template>
-
-<svg class="logo" role="img" aria-label="Gläntans logga"
-xmlns="http://www.w3.org/2000/svg" xmlns:v="https://svgstorm.com"
-viewBox = "0 0 500 500"
-width="500"
-height="500">
-<g fill="None" fill-opacity="0.0" stroke="#DEDDCB" stroke-opacity="1.00" stroke-width="0.3"><path d="
+  <svg
+    class="logo"
+    role="img"
+    aria-label="Gläntans logga"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:v="https://svgstorm.com"
+    viewBox="0 0 500 500"
+    width="500"
+    height="500"
+  >
+    <g fill="None" fill-opacity="0.0" stroke="#DEDDCB" stroke-opacity="1.00" stroke-width="0.3">
+      <path
+        d="
 M 0.00 500.00 
 L 500.00 500.00
 L 500.00 0.00
@@ -1588,9 +1593,12 @@ C 448.00 237.33 448.00 235.67 448.00 234.00
 C 447.45 184.66 429.79 137.74 397.00 101.00
 C 389.20 93.84 381.40 86.19 374.00 79.00
 
-C 327.70 41.36 264.56 22.99 205.22 38.22 C 154.13 51.01 107.36 86.21 79.00 132.00 Z"/>
-</g>
-<g id="moon" fill="#281500" fill-opacity="1.00" stroke="None"><path d="
+C 327.70 41.36 264.56 22.99 205.22 38.22 C 154.13 51.01 107.36 86.21 79.00 132.00 Z"
+      />
+    </g>
+    <g id="moon" fill="#281500" fill-opacity="1.00" stroke="None">
+      <path
+        d="
 M 250.00 45.00 
 C 209.32 38.68 183.29 93.61 212.75 121.25 C 237.11 151.87 296.25 130.14 288.74 90.26 C 277.64 84.65 280.46 102.84 273.25 107.25 C 267.13 115.11 257.60 117.72 248.02 116.98 C 217.51 113.23 216.51 65.30 244.78 56.78 C 253.89 56.33 265.57 48.50 251.00 45.00 Z"
       />
