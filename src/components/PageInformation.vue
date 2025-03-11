@@ -10,7 +10,7 @@ const showExtraImages = computed(() => window.innerWidth >= 768);
   <span class="grid-layout">
     <div class="text-and-fireplace">
       <div class="first-paragraph">
-        <h3>Följ stigen till lugnet - Gläntan väntar!</h3>
+        <h2>Följ stigen till lugnet - Gläntan väntar!</h2>
         <p>
           Djupt inne i den svenska skogen, vid en spegelblank sjö, ligger Gläntan – en plats för stillhet, återhämtning
           och upplevelser i naturens rytm. Här bor du i trädkojor svävande bland grenarna, vattengömslen vid sjöns kant
@@ -64,7 +64,7 @@ const showExtraImages = computed(() => window.innerWidth >= 768);
   }
 }
 
-h3 {
+h2 {
   font-family: $heading-font;
   font-size: 2rem;
   margin-bottom: $spacing;
