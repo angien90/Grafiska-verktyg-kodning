@@ -1,7 +1,7 @@
 <script setup>
-import { ref } from 'vue';
+import { ref } from "vue";
 
-const menuOpen = ref(false); 
+const menuOpen = ref(false);
 
 const toggleMenu = () => {
   menuOpen.value = !menuOpen.value;
@@ -13,16 +13,16 @@ const toggleMenu = () => {
     <h1>GLÄNTAN</h1>
     <p>SOV MED STJÄRNORNA, VAKNA MED SKOGEN.</p>
 
-      <!-- Menu -->
-      <div :class="['menu-icon', { 'open': menuOpen }]" @click="toggleMenu">
-         <div class="bar"></div>
-         <div class="bar"></div>
-         <div class="bar"></div>
-      </div>
+    <!-- Menu -->
+    <div :class="['menu-icon', { open: menuOpen }]" @click="toggleMenu">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
 
-      <!-- Mobile-menu -->
-      <nav v-if="menuOpen" class="mobile-menu">
-        <ul>
+    <!-- Mobile-menu -->
+    <nav v-if="menuOpen" class="mobile-menu">
+      <ul>
         <li><router-link to="/">Hem</router-link></li>
         <li>Om oss</li>
         <li><router-link to="/booking">Boka Rum</router-link></li>
@@ -36,14 +36,14 @@ const toggleMenu = () => {
 .header {
   display: flex;
   flex-direction: column;
-  justify-content: center; 
-  align-items: flex-start; 
+  justify-content: center;
+  align-items: flex-start;
   height: 305px;
-  background-image: url('../assets/images/skog-startsidan.jpg'); 
-  background-size: cover; 
+  background-image: url("../assets/images/skog-startsidan.jpg");
+  background-size: cover;
   background-position: center;
-  padding-left: 20px; 
-  padding-right: 20px; 
+  padding-left: 20px;
+  padding-right: 20px;
   text-align: left;
   position: relative;
   padding-top: 8rem;
@@ -55,27 +55,27 @@ h1 {
   width: 290px;
   height: 83px;
   flex-shrink: 0;
-  font-family: $heading-font; 
-  font-size: 5rem; 
-  margin: 0 0 30px 0; 
-  z-index: 1; 
-  text-shadow: 0 1px 2px 0 rgba(0, 0, 0, 1);
+  font-family: $heading-font;
+  font-size: 5rem;
+  margin: 0 0 30px 0;
+  z-index: 1;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 p {
   color: #fff;
   width: 264px;
   height: 94px;
-  font-family: 'Lilita One';
+  font-family: "Lilita One";
   font-size: 25px;
   font-style: normal;
   font-weight: 400;
-  line-height: 117%; 
+  line-height: 117%;
   letter-spacing: -0.55px;
-  margin-top: 10px; 
+  margin-top: 10px;
   margin-left: 5px;
   margin-bottom: 3.5rem;
-  z-index: 1; 
+  z-index: 1;
 }
 
 .menu-icon {
@@ -87,6 +87,10 @@ p {
   gap: 5px;
   cursor: pointer;
   z-index: 2;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
 }
 
 .bar {
@@ -95,7 +99,9 @@ p {
   flex-shrink: 0;
   background-color: $sand;
   border-radius: 50px;
-  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transition:
+    transform 0.3s ease-in-out,
+    opacity 0.3s ease-in-out;
 }
 
 .menu-icon.open .bar:nth-child(1) {
@@ -114,7 +120,7 @@ p {
   position: absolute;
   top: 0px;
   right: 0px;
-  background:  #465c3e;
+  background: #465c3e;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   padding: 1rem;
   height: 100vh;
@@ -129,18 +135,17 @@ p {
 }
 
 .mobile-menu li {
-  margin-top: px;
   padding: 10px 0;
   text-align: left;
   font-size: 18px;
-  color: $sand; 
+  color: $sand;
   width: 216px;
   height: 54px;
   font-size: 36px;
   font-family: "Lilita One";
   font-style: normal;
   letter-spacing: -0.792px;
-  line-height: 150%; 
+  line-height: 150%;
   font-weight: 400;
 }
 

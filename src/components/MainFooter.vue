@@ -1,20 +1,20 @@
 <script setup>
-import MainLogo from '@/components/MainLogo.vue';
+import MainLogo from "@/components/MainLogo.vue";
 </script>
 
 <template>
   <footer>
-    <a href="/">
+    <RouterLink to="/">
       <div class="footer-logo">
         <MainLogo />
         <h2>Gläntan</h2>
       </div>
-    </a>
+    </RouterLink>
 
     <div class="footer-contact">
       <div class="footer-map-tel">
         <p><a href="https://www.google.com/maps" target="_blank">Hitta hit</a></p>
-        <p>Tele: <a href="tel:+4677777777">+46 777 777 77</a></p>
+        <p><a href="tel:+4677777777">+46 777 777 77</a></p>
       </div>
 
       <div class="footer-some">
@@ -23,16 +23,16 @@ import MainLogo from '@/components/MainLogo.vue';
           <a href="https://www.instagram.com/" target="_blank">
             <img
               src="@/assets/images/instagram-icon.svg"
-              width="25px"
-              height="25px"
+              width="25"
+              height="25"
               alt="Sociala medier ikon för Instagram"
             />
           </a>
           <a href="https://www.facebook.com/" target="_blank">
             <img
               src="@/assets/images/facebook-icon.svg"
-              width="25px"
-              height="25px"
+              width="25"
+              height="25"
               alt="Sociala medier ikon för Facebook"
             />
           </a>
@@ -109,13 +109,17 @@ footer {
 }
 
 /* Tablet */
-@media screen and (min-width: 834px) {
+@media screen and (min-width: 768px) {
+  footer {
+    justify-content: space-around;
+  }
+
   .footer-logo {
     h2 {
       font-size: pxtorem(54px);
     }
   }
-  
+
   .footer-contact {
     display: flex;
     width: 50%;
@@ -128,7 +132,7 @@ footer {
   .footer-map-tel {
     text-align: left;
   }
-  
+
   .some-icons {
     img {
       transform: scale(1.5);
@@ -137,7 +141,7 @@ footer {
 }
 
 /* Desktop */
-@media screen and (min-width: 1512px) {
+@media screen and (min-width: 1280px) {
   .footer-contact {
     line-height: 2.7rem;
     font-size: pxtorem(25px);
