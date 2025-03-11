@@ -108,9 +108,8 @@ form {
 .input {
   height: 40px;
   width: 100%;
-  border-color: 1px solid $sand;
-  border-radius: 15px;
   border: 1px solid $sand;
+  border-radius: 15px;
   background-color: $sand;
   padding: 8px;
 
