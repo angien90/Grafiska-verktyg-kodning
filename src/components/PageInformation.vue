@@ -3,7 +3,7 @@ import { computed } from 'vue';
 import PrimaryButton from './PrimaryButton.vue';
 import imagePath from '/src/assets/images/hus-startsida.jpg';
 
-const showExtraImages = computed(() => window.innerWidth >= 834);
+const showExtraImages = computed(() => window.innerWidth >= 768);
 </script>
 
 <template>
@@ -37,7 +37,7 @@ const showExtraImages = computed(() => window.innerWidth >= 834);
 	display: flex;
 	flex-direction: column;
 
-	@media (min-width: 834px) {
+	@media (min-width: 768px) {
 		display: grid;
 		grid-template-columns: repeat(4, 1fr); 
 	}
@@ -52,11 +52,11 @@ h3 {
 	padding-left: $spacing;
 	padding-right: $spacing;
 
-	@media (min-width: 834px) {
+	@media (min-width: 768px) {
 		margin-top: 0;
 	}
 
-  	@media (min-width: 1512px) { 
+  	@media (min-width: 1280px) { 
     	font-size: 2.25rem;
 	}
 }
@@ -69,12 +69,12 @@ p {
 	padding-left: $spacing;
 	padding-right: $spacing;
 
-	@media (min-width: 834px) {
+	@media (min-width: 768px) {
 		font-size: 1.25rem;
 		padding-right: 0;
 	}
 
-	@media (min-width: 1512px) { 
+	@media (min-width: 1280px) { 
 		font-size: 1.5rem;
 	}
 }
@@ -87,7 +87,7 @@ p {
 .forest-top {
 	display: none;
 
-	@media (min-width: 834px) {
+	@media (min-width: 768px) {
 		display: block;
 		grid-column: 1 / span 2;
 		padding-right: 100px;
@@ -97,7 +97,7 @@ p {
 		justify-self: left;
 	}
 
-	@media (min-width: 1512px) {
+	@media (min-width: 1280px) {
 		height: 350px;
 	}
 }
@@ -106,7 +106,7 @@ p {
 	display: flex;
 	flex-direction: column;
 
-	@media (min-width: 834px) {
+	@media (min-width: 768px) {
 		grid-column: 3 / span 2;
 		margin-left: -100px;
 		padding-right: $spacing;
@@ -118,7 +118,7 @@ p {
 	display: flex;
 	flex-direction: column;
 
-	@media (min-width: 834px) {
+	@media (min-width: 768px) {
 		grid-column: 3 / span 2;
 		grid-row: 1;
 		justify-self: start;
@@ -130,21 +130,21 @@ p {
 	display: flex;
 	flex-direction: column;
 
-	@media (min-width: 834px) {
+	@media (min-width: 768px) {
 		grid-column: 1 / span 2;
 		grid-row: 1;
 	}
 }
 
 .second-paragraph {
-	@media (min-width: 834px) {
+	@media (min-width: 768px) {
 		grid-column: 1 / span 2;
 		padding-right: 100px;
 		margin-top: $spacing;
 		
   }
 
-  @media (min-width: 1512px) {
+  @media (min-width: 1280px) {
 		padding-left: $spacing;
 		margin-left: $spacing;
 		margin-right: $spacing;
@@ -152,12 +152,12 @@ p {
 }
 
 .second-paragraph p::first-letter {
-	@media (min-width: 834px) {
+	@media (min-width: 768px) {
 		font-size: 2rem; 
 		font-weight: bold;
 	}
 
-	@media (min-width: 1512px) {
+	@media (min-width: 1280px) {
 		font-size: 3rem; 
 	}
 }
@@ -165,7 +165,7 @@ p {
 .fireplace {
 	display: none;
 
-	@media (min-width: 834px) {
+	@media (min-width: 768px) {
 		display: block;
 		height: 280px;
 		grid-column: 3 / span 2;
@@ -173,7 +173,7 @@ p {
 		padding-left: $spacing;
 	}
 
-	@media (min-width: 1512px) {
+	@media (min-width: 1280px) {
 		height: 380px;
 	}
 }
@@ -184,11 +184,11 @@ p {
 	object-fit: cover;
 	margin-bottom: $spacing;
 
-	@media (min-width: 834px) {
+	@media (min-width: 768px) {
 		display: none;
 	}
 
-	@media (min-width: 1512px) {
+	@media (min-width: 1280px) {
 		display: none;
 	}
 }
@@ -196,14 +196,14 @@ p {
 .lake{
 	display:none;
 
-	@media (min-width: 834px) {
+	@media (min-width: 768px) {
 		display: block;
 		grid-column: 1 / span 4;
 		grid-row: 2;
 		height: 225px;
 	}
 
-	@media (min-width: 1512px) {
+	@media (min-width: 1280px) {
 		height: 235px;
 	}
 }
@@ -211,7 +211,7 @@ p {
 .button-mobile {
 	display: block;
 
-	@media (min-width: 834px) {
+	@media (min-width: 768px) {
 		display: none;
 	}
 }
@@ -219,7 +219,7 @@ p {
 .button-tablet-desktop {
 	display: none;
 
-	@media (min-width: 834px) {
+	@media (min-width: 768px) {
 		display: block;
 	}
 }
