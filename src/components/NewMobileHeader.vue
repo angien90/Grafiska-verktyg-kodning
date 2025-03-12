@@ -62,7 +62,7 @@ const toggleMenu = () => {
 h1 {
   color: #000;
   font-family: "Lilita One";
-  font-size: 36px;
+  font-size: pxtorem(36px);
   font-weight: 400;
   letter-spacing: -0.792px;
   margin: 0px 0px 10px 0px;
@@ -172,11 +172,11 @@ li{
 .mobile-menu li {
   padding: 10px 0;
   text-align: left;
-  font-size: 18px;
+  font-size: pxtorem(18px);
   color: $sand;
   width: 216px;
   height: 54px;
-  font-size: 32px;
+  font-size: pxtorem(32px);
   font-family: "Lilita One";
   font-style: normal;
   letter-spacing: -0.792px;

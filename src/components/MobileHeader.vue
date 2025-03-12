@@ -82,7 +82,7 @@ h1 {
 
   @media (min-width: 1280px) {
     margin-left: 9.5rem;
-    font-size: 128px;
+    font-size: pxtorem(128px);
     font-style: normal;
     font-weight: 400;
     line-height: 0.54;
@@ -97,7 +97,7 @@ p {
   width: 264px;
   height: 94px;
   font-family: "Lilita One";
-  font-size: 25px;
+  font-size: pxtorem(25px);
   font-style: normal;
   font-weight: 400;
   line-height: 117%;
@@ -113,7 +113,7 @@ p {
 
   @media (min-width: 1280px) {
     margin-left: 10rem;
-    font-size: 36px;
+    font-size: pxtorem(36px);
     width: 385px;
     margin-top: 25px;
   }
@@ -180,11 +180,11 @@ button.menu-icon {
 .mobile-menu li {
   padding: 10px 0;
   text-align: left;
-  font-size: 18px;
+  font-size: pxtorem(18px);
   color: $sand;
   width: 216px;
   height: 54px;
-  font-size: 32px;
+  font-size: pxtorem(32px);
   font-family: "Lilita One";
   font-style: normal;
   letter-spacing: -0.792px;
