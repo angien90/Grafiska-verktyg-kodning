@@ -10,15 +10,15 @@ const toggleMenu = () => {
 
 <template>
   <header class="header">
-    <h1>GLÄNTAN</h1>
+    <h1>Gläntan</h1>
     <p>SOV MED STJÄRNORNA, VAKNA MED SKOGEN.</p>
 
     <!-- Menu -->
-    <div :class="['menu-icon', { open: menuOpen }]" @click="toggleMenu">
+    <button :class="['menu-icon', { open: menuOpen }]" @click="toggleMenu">
       <div class="bar"></div>
       <div class="bar"></div>
       <div class="bar"></div>
-    </div>
+    </button>
 
     <!-- Mobile-menu -->
     <nav v-if="menuOpen" class="mobile-menu">
@@ -47,6 +47,14 @@ const toggleMenu = () => {
   text-align: left;
   position: relative;
   padding-top: 8rem;
+
+  @media (min-width: 768px) {
+    height: 350px;
+  }
+
+  @media (min-width: 1280px) {
+    height: 810px;
+  }
 }
 
 li{
@@ -54,18 +62,36 @@ li{
 }
 
 h1 {
+  text-transform: uppercase;
+  overflow: hidden; 
   color: $sand;
-  display: flex;
-  width: 290px;
-  height: 83px;
+  width: auto;
+  max-width: 100%;
+  height: auto;
   flex-shrink: 0;
   font-family: $heading-font;
-  font-size: 5rem;
-  margin: 0 0 30px 0;
+  font-size: 4.5rem;
+  margin: 0 0 5px 0;
   z-index: 1;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
 
+  @media (min-width: 768px) {
+    font-size: 4.5rem;
+    margin-left: 30px;
+  }
+
+  @media (min-width: 1280px) {
+    margin-left: 9.5rem;
+    font-size: 128px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 0.54;
+    letter-spacing: -2.816px;
+    overflow: visible;
+    margin-bottom: 50px;
+  }
+}
+  
 p {
   color: #fff;
   width: 264px;
@@ -76,13 +102,26 @@ p {
   font-weight: 400;
   line-height: 117%;
   letter-spacing: -0.55px;
-  margin-top: 10px;
+  margin-top: 5px;
   margin-left: 5px;
-  margin-bottom: 3.5rem;
+  margin-bottom: 3rem;
   z-index: 1;
+
+  @media (min-width: 768px) {
+    margin-left: 30px;
+  }
+
+  @media (min-width: 1280px) {
+    margin-left: 10rem;
+    font-size: 36px;
+    width: 385px;
+    margin-top: 25px;
+  }
 }
 
-.menu-icon {
+button.menu-icon {
+  background: transparent;
+  border: none;
   position: absolute;
   top: 20px;
   right: 20px;
@@ -145,12 +184,13 @@ p {
   color: $sand;
   width: 216px;
   height: 54px;
-  font-size: 36px;
+  font-size: 32px;
   font-family: "Lilita One";
   font-style: normal;
   letter-spacing: -0.792px;
   line-height: 150%;
   font-weight: 400;
+  padding-top: 50px;
 }
 
 .mobile-menu a {
