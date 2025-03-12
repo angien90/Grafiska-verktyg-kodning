@@ -10,13 +10,13 @@
 </template>
 
 <style lang="scss" scoped>
-@media (max-width: 799px) {
+@media (max-width: 767px) {
   nav {
     display: none;
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 768px) {
   nav {
     background-color: $skogsgron;
     width: 100%;
@@ -35,7 +35,7 @@
       li {
         cursor: pointer;
         font-family: $heading-font;
-        font-size: 25px;
+        font-size: pxtorem(25px);
         text-transform: uppercase;
         color: $sand;
 
@@ -61,7 +61,7 @@
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1280px) {
   nav {
     height: 130px;
 
@@ -69,7 +69,7 @@
       padding: 0 92px 0 92px; //enligt layout i komponenter
 
       li {
-        font-size: 40px; //enligt layout i komponenter
+        font-size: pxtorem(40px); //enligt layout i komponenter
       }
     }
   }

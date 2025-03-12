@@ -1,6 +1,5 @@
 <script setup>
-import { ref } from 'vue';
-import HomeView from './views/HomeView.vue';
+import { ref } from "vue";
 </script>
 
 <template>
@@ -12,7 +11,7 @@ import HomeView from './views/HomeView.vue';
 nav {
   display: flex;
   gap: 15px;
-  font-size: 18px;
+  font-size: pxtorem(18px);
 }
 
 h1 {

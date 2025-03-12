@@ -6,8 +6,7 @@ import NewMobileHeader from "../components/NewMobileHeader.vue";
 </script>
 
 <template>
-
-   <NewMobileHeader />
+  <NewMobileHeader />
 
   <div>
     <NavBar />
@@ -19,7 +18,7 @@ import NewMobileHeader from "../components/NewMobileHeader.vue";
 <style lang="scss" scoped>
 main {
   background-color: $sand;
-  min-height: 100vh;
+  min-height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;

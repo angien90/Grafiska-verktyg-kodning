@@ -16,15 +16,15 @@ $lovgron: #707e43;
 $morkbrun: #5a3b1f;
 
 /* Fonts */
-$heading-font: 'Lilita One', sans-serif;
-$body-font: 'Assistant', sans-serif;
+$heading-font: "Lilita One", sans-serif;
+$body-font: "Assistant", sans-serif;
 
 /* Default spacing */
 $spacing: 25px;
 
 /* Buttons */
 @mixin primary-button {
-  display: block;
+  display:block;
   margin: 0 auto;
   cursor: pointer;
   width: 150px;
@@ -33,6 +33,9 @@ $spacing: 25px;
   border-radius: 7px;
   background-color: $skogsgron;
   text-align: center;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
   color: $sand;
   font-family: $body-font;
   font-weight: bold;
@@ -61,6 +64,9 @@ $spacing: 25px;
   border-radius: 7px;
   background-color: $tradstam;
   text-align: center;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
   color: $sand;
   font-family: $body-font;
   font-weight: bold;

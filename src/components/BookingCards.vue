@@ -1,70 +1,76 @@
 <template>
   <main>
-    <div class="cabins">
-      <div class="cardWrapper">
+    <section class="cabins">
+      <article class="cardWrapper">
         <div class="card">
-          <div class="picture">
-            <div class="cabinImage sjostugan" aria-label="Stuga med brant lutande tak och stora glaspartier i skogen."></div>
-          </div>
+          <figure class="picture">
+            <img
+              src="../assets/images/sjostugan.jpg"
+              alt="Stuga med brant lutande tak och stora glaspartier i skogen."
+            />
+          </figure>
           <div class="infotext">
             <h3>Sjöstugan</h3>
             <p>
               Somna till sjöns stilla vågor och vakna med soluppgången. En naturnära och rofylld tillflyktsort med
               magisk utsikt.
             </p>
-            <h4>Från 1 399 kr</h4>
+            <p class="price">Från 1 399 kr</p>
           </div>
         </div>
-      </div>
+      </article>
 
-      <div class="cardWrapper">
+      <article class="cardWrapper">
         <div class="card">
-          <div class="picture">
-            <div class="cabinImage spegelboet" alt="Kvadratisk spegelbeklädd kub till stuga uppe i träden. Entré via hängbro."></div>
-          </div>
+          <figure class="picture">
+            <img
+              src="../assets/images/spegelboet.jpg"
+              alt="Kvadratisk spegelbeklädd kub till stuga uppe i träden. Entré via hängbro."
+            />
+          </figure>
           <div class="infotext">
             <h3>Spegelboet</h3>
             <p>
               Bo uppe i träden och låt dig smälta samman med naturen. Den spegelblanka fasaden skapar en unik,
               kamouflerad upplevelse mitt i skogens ro.
             </p>
-            <h4>Från 1 758 kr</h4>
+            <p class="price">Från 1 758 kr</p>
           </div>
         </div>
-      </div>
+      </article>
 
-      <div class="cardWrapper">
+      <article class="cardWrapper">
         <div class="card">
-          <div class="picture">
-            <div class="cabinImage trakojan" alt="Stuga med brant lutande tak och badtunna i skogen."></div>
-          </div>
+          <figure class="picture">
+            <img src="../assets/images/trakoja.jpg" alt="Stuga med brant lutande tak och badtunna i skogen." />
+          </figure>
           <div class="infotext">
             <h3>Träkojan</h3>
             <p>
               Njut av total avskildhet i en mysig koja, djupt inne i skogen. Här får du ro, stillhet och en chans att
               komma nära naturen på riktigt.
             </p>
-            <h4>Från 1 549 kr</h4>
+            <p class="price">Från 1 549 kr</p>
           </div>
         </div>
-      </div>
+      </article>
 
-      <div class="cardWrapper">
+      <article class="cardWrapper">
         <div class="card">
-          <div class="picture">
-            <div class="cabinImage eldnastet" alt="Eldstad med sprakande brasa."></div>
-          </div>
+          <figure class="picture">
+            <img src="../assets/images/eldnastet.jpg" alt="Eldstad med sprakande brasa." />
+          </figure>
           <div class="infotext">
             <h3>Eldnästet</h3>
             <p>
               Samla familjen kring elden i en avskild koja och njut av lugnet i skogen. En plats för gemenskap och
               mysiga stunder.
             </p>
-            <h4>Från 2 129 kr</h4>
+            <p class="price">Från 2 129 kr</p>
           </div>
         </div>
-      </div>
-    </div>
+      </article>
+    </section>
   </main>
 </template>
 
@@ -87,57 +93,40 @@
     .card {
       background-color: $greige;
       width: 320px;
-      height: 530px; //Ökat från de specade 450px eftersom innehållet inte ryms då
+      height: auto; //Ändrat till auto från de specade 450px eftersom innehållet är så olika stort och då ger olika mycket tomt utrymme
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: space-evenly;
       border-radius: 5px;
       box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
       margin-top: 0;
       margin-bottom: 25px;
+      padding: 25px;
 
       .picture {
-        display: block;
+        width: 260px;
+        height: 290px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        border-radius: 5px;
+        margin: 0;
+        padding: 0;
 
-        .cabinImage {
-          width: 260px;
-          height: 290px;
-          background-size: cover;
-          background-position: center center;
-          border-radius: 5px;
-        }
-
-        .sjostugan {
-          background-image: url('../assets/images/sjostugan.jpg');
-        }
-
-        .spegelboet {
-          background-image: url('../assets/images/spegelboet.jpg');
-        }
-
-        .trakojan {
-          background-image: url('../assets/images/Trakoja.jpg');
-        }
-
-        .eldnastet {
-          background-image: url('../assets/images/Eldnästet.jpg');
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
         }
       }
 
       .infotext {
         width: 260px;
-        justify-content: space-evenly;
+        height: auto;
+        padding-top: 5px;
 
         h3 {
-          font-family: $heading-font;
-          font-weight: 400;
-          font-size: pxtorem(25px);
-          margin-top: 0;
-          text-transform: uppercase;
-        }
-
-        h4 {
           font-family: $heading-font;
           font-weight: 400;
           font-size: pxtorem(20px);
@@ -145,19 +134,26 @@
           text-transform: uppercase;
         }
 
+        .price {
+          font-family: $heading-font;
+          font-weight: 400;
+          font-size: pxtorem(16px);
+          margin-bottom: 5px;
+          text-transform: uppercase;
+        }
+
         p {
           font-family: $body-font;
-          font-size: 1rem;
+          font-size: pxtorem(16px);
           margin-top: 0;
-          margin-bottom: 15px; //ej specat
+          margin-bottom: 5px; //ej specat
         }
       }
     }
   }
 }
 
-/* MEDIA QUERY FÖR STÖRRE SKÄRMAR (>600px) */
-@media (min-width: 800px) {
+@media (min-width: 768px) {
   .cabins {
     flex-direction: row;
     justify-content: space-evenly;
@@ -171,19 +167,28 @@
       flex-direction: row;
       justify-content: center;
       align-items: center;
+      margin-bottom: 35px; //Minimiavstånd satt till 25px. Ökade eftersom det kändes för lite.
+
 
       .card {
+        height: 100%;
         padding: 25px;
-        margin-bottom: 50px; //Minimiavstånd satt till 25px. Ökade eftersom det kändes för lite.
+        padding-bottom: 5px;
+        position: relative;
+
+        .price {
+          position: absolute;
+          bottom: 10px;
+        }
       }
     }
   }
 }
 
-/* MEDIA QUERY FÖR STÖRRE SKÄRMAR (>1200px) */
-@media (min-width: 1500px) {
+@media (min-width: 1400px) {
   .cabins {
     width: 100%;
+    margin-bottom: 0;
 
     .cardWrapper {
       width: 50%;
@@ -196,16 +201,16 @@
         flex-direction: row;
         justify-content: space-around;
         padding: 25px; //ej specat
-        margin-bottom: 75px; //Minimiavstånd satt till 25px. Ökade eftersom det kändes för lite.
+        margin-bottom: 50px; //Minimiavstånd satt till 25px. Ökade eftersom det kändes för lite.
 
         .picture {
           height: 100%;
           width: 50%;
+          height: 385px;
+          width: 290px;
+          display: block;
 
-          .cabinImage {
-            height: 385px;
-            width: 290px;
-            display: block;
+          img{
             object-fit: cover;
           }
         }
@@ -215,15 +220,15 @@
           width: 50%;
           display: flex;
           flex-direction: column;
-          justify-content: space-around;
+          justify-content: start;
           padding-left: 15px; //ej specat
 
           h3 {
-            font-size: pxtorem(38px);
+            font-size: pxtorem(36px);
           }
 
-          h4 {
-            font-size: pxtorem(30px);
+          .price {
+            font-size: pxtorem(25px);
           }
 
           p {
