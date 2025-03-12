@@ -45,7 +45,7 @@ const showExtraImages = computed(() => window.innerWidth >= 768);
     <img
       v-if="showExtraImages"
       class="lake"
-      src="/src/assets/images/sjö-startsida.jpg"
+      src="/src/assets/images/sjo-startsida.jpg"
       alt="En kajak med två personer på en lugn sjö ute i skogen"
       width="500"
       height="500"

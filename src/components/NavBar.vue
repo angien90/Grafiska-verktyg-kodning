@@ -35,7 +35,7 @@
       li {
         cursor: pointer;
         font-family: $heading-font;
-        font-size: 25px;
+        font-size: pxtorem(25px);
         text-transform: uppercase;
         color: $sand;
 
@@ -69,7 +69,7 @@
       padding: 0 92px 0 92px; //enligt layout i komponenter
 
       li {
-        font-size: 40px; //enligt layout i komponenter
+        font-size: pxtorem(40px); //enligt layout i komponenter
       }
     }
   }
