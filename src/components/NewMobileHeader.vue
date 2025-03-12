@@ -17,11 +17,11 @@ const toggleMenu = () => {
     </div>
 
     <!-- Menu -->
-    <div :class="['menu-icon', { open: menuOpen }]" @click="toggleMenu">
+    <button :class="['menu-icon', { open: menuOpen }]" @click="toggleMenu">
       <div class="bar"></div>
       <div class="bar"></div>
       <div class="bar"></div>
-    </div>
+    </button>
 
     <!-- Mobile-menu -->
     <nav v-if="menuOpen" class="mobile-menu">
@@ -55,7 +55,7 @@ const toggleMenu = () => {
   }
 
   @media (min-width: 1280px) {
-    height: 830px;
+    height: 810px;
   }
 }
 
@@ -106,7 +106,9 @@ h1 {
   }
 }
 
-.menu-icon {
+button.menu-icon {
+  background: transparent;
+  border: none;
   display:block;
   position: absolute;
   top: 20px;
@@ -122,6 +124,9 @@ h1 {
   }
 }
 
+li{
+  text-transform: uppercase;
+}
 
 .bar {
   width: 44px;
@@ -171,12 +176,13 @@ h1 {
   color: $sand;
   width: 216px;
   height: 54px;
-  font-size: 36px;
+  font-size: 32px;
   font-family: "Lilita One";
   font-style: normal;
   letter-spacing: -0.792px;
   line-height: 150%;
   font-weight: 400;
+  padding-top: 50px;
 }
 
 .mobile-menu a {
