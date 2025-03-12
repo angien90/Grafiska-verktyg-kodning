@@ -15,7 +15,7 @@
               Somna till sjöns stilla vågor och vakna med soluppgången. En naturnära och rofylld tillflyktsort med
               magisk utsikt.
             </p>
-            <p class="price" aria-label="Pris från 1 399 kr">Från 1 399 kr</p>
+            <p class="price">Från 1 399 kr</p>
           </div>
         </div>
       </article>
@@ -34,7 +34,7 @@
               Bo uppe i träden och låt dig smälta samman med naturen. Den spegelblanka fasaden skapar en unik,
               kamouflerad upplevelse mitt i skogens ro.
             </p>
-            <p class="price" aria-label="Pris från 1758 kr">Från 1 758 kr</p>
+            <p class="price">Från 1 758 kr</p>
           </div>
         </div>
       </article>
@@ -50,7 +50,7 @@
               Njut av total avskildhet i en mysig koja, djupt inne i skogen. Här får du ro, stillhet och en chans att
               komma nära naturen på riktigt.
             </p>
-            <p class="price" aria-label="Pris från 1549 kr">Från 1 549 kr</p>
+            <p class="price">Från 1 549 kr</p>
           </div>
         </div>
       </article>
@@ -66,7 +66,7 @@
               Samla familjen kring elden i en avskild koja och njut av lugnet i skogen. En plats för gemenskap och
               mysiga stunder.
             </p>
-            <p class="price" aria-label="Pris från 2129 kr">Från 2 129 kr</p>
+            <p class="price">Från 2 129 kr</p>
           </div>
         </div>
       </article>
@@ -93,7 +93,7 @@
     .card {
       background-color: $greige;
       width: 320px;
-      height: auto; //Ämdrat till auto från de specade 450px eftersom innehållet är så olika stort och då ger olika mycket tomt utrymme
+      height: auto; //Ändrat till auto från de specade 450px eftersom innehållet är så olika stort och då ger olika mycket tomt utrymme
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -138,7 +138,7 @@
           font-family: $heading-font;
           font-weight: 400;
           font-size: pxtorem(16px);
-          margin-top: 0;
+          margin-bottom: 5px;
           text-transform: uppercase;
         }
 
@@ -167,21 +167,25 @@
       flex-direction: row;
       justify-content: center;
       align-items: center;
+      margin-bottom: 35px; //Minimiavstånd satt till 25px. Ökade eftersom det kändes för lite.
+
 
       .card {
-        height: 530px;
+        height: 100%;
         padding: 25px;
-        margin-bottom: 50px; //Minimiavstånd satt till 25px. Ökade eftersom det kändes för lite.
+        padding-bottom: 5px;
+        position: relative;
 
         .price {
-          padding-top: 25px;
+          position: absolute;
+          bottom: 10px;
         }
       }
     }
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1400px) {
   .cabins {
     width: 100%;
     margin-bottom: 0;
@@ -202,11 +206,13 @@
         .picture {
           height: 100%;
           width: 50%;
-
           height: 385px;
           width: 290px;
           display: block;
-          object-fit: cover;
+
+          img{
+            object-fit: cover;
+          }
         }
 
         .infotext {
@@ -214,7 +220,7 @@
           width: 50%;
           display: flex;
           flex-direction: column;
-          justify-content: space-around;
+          justify-content: start;
           padding-left: 15px; //ej specat
 
           h3 {
