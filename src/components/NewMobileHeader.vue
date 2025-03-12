@@ -42,7 +42,7 @@ const toggleMenu = () => {
   justify-content: center;
   align-items: center;
   height: 305px;
-  background-image: url("../assets/images/skog-våra-rum.jpg");
+  background-image: url("../assets/images/skog.jpg");
   background-size: cover;
   background-position: center;
   padding-left: 20px;
