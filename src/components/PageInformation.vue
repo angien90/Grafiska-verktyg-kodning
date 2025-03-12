@@ -35,11 +35,11 @@ const showExtraImages = computed(() => window.innerWidth >= 768);
           Låt vinden viska genom trädkronorna medan du slappnar av på din privata terrass. Vakna till ljudet av
           fågelsång och känn doften av nyskog. Här finns inga distraktioner, ingen stress – bara du, naturen och lugnet.
         </p>
-        <PrimaryButton class="button-tablet-desktop" buttonText="Boka rum" @click="$router.push('/booking')" />
+        <PrimaryButton class="button-tablet-desktop" buttonText="Boka rum" to="/booking" />
       </div>
     </div>
 
-    <PrimaryButton class="button-mobile" buttonText="Boka rum" @click="$router.push('/booking')" />
+    <PrimaryButton class="button-mobile" buttonText="Boka rum" to="/booking" />
 
     <img class="forest-botton" :src="imagePath" alt="Modernt stuga ute i skogen" width="500" height="500" />
     <img
@@ -232,7 +232,7 @@ p {
 }
 
 .button-mobile {
-  display: block;
+  display: flex;
 
   @media (min-width: 768px) {
     display: none;
@@ -243,7 +243,7 @@ p {
   display: none;
 
   @media (min-width: 768px) {
-    display: block;
+    display: flex;
   }
 }
 </style>

@@ -1,14 +1,27 @@
 <script setup>
-defineProps({
+import { computed } from "vue";
+import { RouterLink } from "vue-router";
+
+const props = defineProps({
   buttonText: String,
   disabled: Boolean,
+  to: String, // Ny prop för länk
 });
+
+// Beräkna om vi ska använda <RouterLink> eller <button>
+const isLink = computed(() => !!props.to);
 </script>
 
 <template>
-  <button :disabled="disabled" class="primary-button" :class="{ disabled: disabled }" type="submit">
+  <component
+    :is="isLink ? RouterLink : 'button'"
+    :to="isLink ? to : null"
+    :disabled="!isLink && disabled"
+    class="primary-button"
+    :class="{ disabled: disabled }"
+  >
     {{ buttonText }}
-  </button>
+  </component>
 </template>
 
 <style lang="scss" scoped>
