@@ -185,7 +185,7 @@
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1400px) {
   .cabins {
     width: 100%;
     margin-bottom: 0;
@@ -220,7 +220,7 @@
           width: 50%;
           display: flex;
           flex-direction: column;
-          justify-content: space-around;
+          justify-content: start;
           padding-left: 15px; //ej specat
 
           h3 {
