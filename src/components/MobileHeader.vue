@@ -39,7 +39,7 @@ const toggleMenu = () => {
   justify-content: center;
   align-items: flex-start;
   height: 305px;
-  background-image: url("../assets/images/skog-startsidan.jpg");
+  background-image: url("../assets/images/skog-startsidan.webp");
   background-size: cover;
   background-position: center;
   padding-left: 20px;

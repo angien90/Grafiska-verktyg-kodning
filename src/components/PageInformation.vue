@@ -1,7 +1,7 @@
 <script setup>
 import { computed } from "vue";
 import PrimaryButton from "./PrimaryButton.vue";
-import imagePath from "/src/assets/images/hus-startsida.jpg";
+import imagePath from "/src/assets/images/hus-startsida.webp";
 
 const showExtraImages = computed(() => window.innerWidth >= 768);
 </script>
@@ -21,7 +21,7 @@ const showExtraImages = computed(() => window.innerWidth >= 768);
       <img
         class="fireplace"
         v-if="showExtraImages"
-        src="/src/assets/images/eldstad-startsida.jpg"
+        src="/src/assets/images/eldstad-startsida.webp"
         alt="Modern stuga med eldstad och kök"
         width="500"
         height="500"
@@ -46,7 +46,7 @@ const showExtraImages = computed(() => window.innerWidth >= 768);
     <img
       v-if="showExtraImages"
       class="lake"
-      src="/src/assets/images/sjo-startsida.jpg"
+      src="/src/assets/images/sjo-startsida.webp"
       alt="En kajak med två personer på en lugn sjö ute i skogen"
       width="500"
       height="500"
