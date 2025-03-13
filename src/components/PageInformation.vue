@@ -25,11 +25,12 @@ const showExtraImages = computed(() => window.innerWidth >= 768);
         alt="Modern stuga med eldstad och kök"
         width="500"
         height="500"
+        loading="lazy"
       />
     </div>
     <br />
     <div class="forest-and-text">
-      <img class="forest-top" :src="imagePath" alt="Modernt stuga ute i skogen" width="500" height="500" />
+      <img class="forest-top" :src="imagePath" alt="Modernt stuga ute i skogen" width="500" height="500"/>
       <div class="second-paragraph">
         <p>
           Låt vinden viska genom trädkronorna medan du slappnar av på din privata terrass. Vakna till ljudet av
@@ -49,6 +50,7 @@ const showExtraImages = computed(() => window.innerWidth >= 768);
       alt="En kajak med två personer på en lugn sjö ute i skogen"
       width="500"
       height="500"
+      loading="lazy"
     />
   </span>
 </template>

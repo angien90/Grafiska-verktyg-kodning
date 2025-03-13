@@ -34,6 +34,7 @@ onMounted(() => {
     viewBox="0 0 500 500"
     width="500"
     height="500"
+    loading="lazy"
   >
     <g fill="None" fill-opacity="0.0" stroke="#DEDDCB" stroke-opacity="1.00" stroke-width="0.3">
       <path
