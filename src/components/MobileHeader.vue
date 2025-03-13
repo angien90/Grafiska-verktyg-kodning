@@ -39,7 +39,7 @@ const toggleMenu = () => {
   justify-content: center;
   align-items: flex-start;
   height: 305px;
-  background-image: url("../assets/images/skog-startsidan.jpg");
+  background-image: url("../assets/images/skog-startsidan.webp");
   background-size: cover;
   background-position: center;
   padding-left: 20px;
@@ -180,7 +180,7 @@ button.menu-icon {
 .mobile-menu li {
   padding: 10px 0;
   text-align: left;
-  font-size: pxtorem(18px);
+  font-size: 1.1rem;
   color: $sand;
   width: 216px;
   height: 54px;

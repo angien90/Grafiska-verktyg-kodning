@@ -1,7 +1,7 @@
 <script setup>
 import { computed } from "vue";
 import PrimaryButton from "./PrimaryButton.vue";
-import imagePath from "/src/assets/images/hus-startsida.jpg";
+import imagePath from "/src/assets/images/hus-startsida.webp";
 
 const showExtraImages = computed(() => window.innerWidth >= 768);
 </script>
@@ -21,15 +21,16 @@ const showExtraImages = computed(() => window.innerWidth >= 768);
       <img
         class="fireplace"
         v-if="showExtraImages"
-        src="/src/assets/images/eldstad-startsida.jpg"
+        src="/src/assets/images/eldstad-startsida.webp"
         alt="Modern stuga med eldstad och kök"
         width="500"
         height="500"
+        loading="lazy"
       />
     </div>
     <br />
     <div class="forest-and-text">
-      <img class="forest-top" :src="imagePath" alt="Modernt stuga ute i skogen" width="500" height="500" />
+      <img class="forest-top" :src="imagePath" alt="Modernt stuga ute i skogen" width="500" height="500"/>
       <div class="second-paragraph">
         <p>
           Låt vinden viska genom trädkronorna medan du slappnar av på din privata terrass. Vakna till ljudet av
@@ -45,10 +46,11 @@ const showExtraImages = computed(() => window.innerWidth >= 768);
     <img
       v-if="showExtraImages"
       class="lake"
-      src="/src/assets/images/sjo-startsida.jpg"
+      src="/src/assets/images/sjo-startsida.webp"
       alt="En kajak med två personer på en lugn sjö ute i skogen"
       width="500"
       height="500"
+      loading="lazy"
     />
   </span>
 </template>

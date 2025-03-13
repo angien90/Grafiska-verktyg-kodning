@@ -42,7 +42,7 @@ const toggleMenu = () => {
   justify-content: center;
   align-items: center;
   height: 305px;
-  background-image: url("../assets/images/skog.jpg");
+  background-image: url("../assets/images/skog.webp");
   background-size: cover;
   background-position: center;
   padding-left: 20px;
@@ -172,7 +172,7 @@ li{
 .mobile-menu li {
   padding: 10px 0;
   text-align: left;
-  font-size: pxtorem(18px);
+  font-size: 1.1rem;;
   color: $sand;
   width: 216px;
   height: 54px;

@@ -5,9 +5,8 @@
         <div class="card">
           <figure class="picture">
             <img
-              src="../assets/images/sjostugan.jpg"
-              alt="Stuga med brant lutande tak och stora glaspartier i skogen."
-            />
+              src="../assets/images/sjostugan.webp"
+              alt="Stuga med brant lutande tak och stora glaspartier i skogen." loading="lazy"/>
           </figure>
           <div class="infotext">
             <h3>Sjöstugan</h3>
@@ -24,9 +23,8 @@
         <div class="card">
           <figure class="picture">
             <img
-              src="../assets/images/spegelboet.jpg"
-              alt="Kvadratisk spegelbeklädd kub till stuga uppe i träden. Entré via hängbro."
-            />
+              src="../assets/images/spegelboet.webp"
+              alt="Kvadratisk spegelbeklädd kub till stuga uppe i träden. Entré via hängbro." loading="lazy"/>
           </figure>
           <div class="infotext">
             <h3>Spegelboet</h3>
@@ -42,7 +40,7 @@
       <article class="cardWrapper">
         <div class="card">
           <figure class="picture">
-            <img src="../assets/images/trakoja.jpg" alt="Stuga med brant lutande tak och badtunna i skogen." />
+            <img src="../assets/images/trakoja.webp" alt="Stuga med brant lutande tak och badtunna i skogen." loading="lazy"/>
           </figure>
           <div class="infotext">
             <h3>Träkojan</h3>
@@ -58,7 +56,7 @@
       <article class="cardWrapper">
         <div class="card">
           <figure class="picture">
-            <img src="../assets/images/eldnastet.jpg" alt="Eldstad med sprakande brasa." />
+            <img src="../assets/images/eldnastet.webp" alt="Eldstad med sprakande brasa." loading="lazy"/>
           </figure>
           <div class="infotext">
             <h3>Eldnästet</h3>

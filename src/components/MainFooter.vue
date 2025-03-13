@@ -26,6 +26,7 @@ import MainLogo from "@/components/MainLogo.vue";
               width="25"
               height="25"
               alt="Sociala medier ikon för Instagram"
+              loading="lazy"
             />
           </a>
           <a href="https://www.facebook.com/" target="_blank">
@@ -34,6 +35,7 @@ import MainLogo from "@/components/MainLogo.vue";
               width="25"
               height="25"
               alt="Sociala medier ikon för Facebook"
+              loading="lazy"
             />
           </a>
         </div>
