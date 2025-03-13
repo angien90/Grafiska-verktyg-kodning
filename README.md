@@ -144,3 +144,41 @@ Mer detaljerade bilder över designen ligger i mappen assets/screenshot design.
 ![Desktop design](https://github.com/user-attachments/assets/2fd2b74a-b5d1-4d87-8d44-9b17fb3f7f13)
 
 ## Printbilder från färdig webbplats
+
+### Mobilvy
+![Startsidan](https://github.com/Medieinstitutet/fed24d-grafiska-verktyg-panterkameleonterna/blob/main/assets/screenshot%20design/website%20screenshots/Printscreen%20-%20Mobile%20-%20Startpage.jpg)
+
+![Hamburgermeny](https://github.com/Medieinstitutet/fed24d-grafiska-verktyg-panterkameleonterna/blob/main/assets/screenshot%20design/website%20screenshots/Printscreen%20-%20Mobile%20-%20Menu.jpg)
+
+![Cookiebar](https://github.com/Medieinstitutet/fed24d-grafiska-verktyg-panterkameleonterna/blob/main/assets/screenshot%20design/website%20screenshots/Printscreen%20-%20Mobile%20-%20Cookiebar.jpg)
+
+![Bokningssidan](https://github.com/Medieinstitutet/fed24d-grafiska-verktyg-panterkameleonterna/blob/main/assets/screenshot%20design/website%20screenshots/Printscreen%20-%20Mobile%20-%20Booking.jpg)
+
+### Tabletvy
+![Startsidan](https://github.com/Medieinstitutet/fed24d-grafiska-verktyg-panterkameleonterna/blob/main/assets/screenshot%20design/website%20screenshots/Printscreen%20-%20Tablet%20-%20Startpage.jpg)
+
+![Cookiebar tablet & desktop](https://github.com/Medieinstitutet/fed24d-grafiska-verktyg-panterkameleonterna/blob/main/assets/screenshot%20design/website%20screenshots/Printscreen%20-%20Tablet%20-%20Desktop%20-%20Cookiebar.jpg)
+
+![Bokningssidan](https://github.com/Medieinstitutet/fed24d-grafiska-verktyg-panterkameleonterna/blob/main/assets/screenshot%20design/website%20screenshots/Printscreen%20-%20Tablet%20-%20Booking.jpg)
+
+### Desktopvy
+![Startsidan](https://github.com/Medieinstitutet/fed24d-grafiska-verktyg-panterkameleonterna/blob/main/assets/screenshot%20design/website%20screenshots/Printscreen%20-%20Desktop%20-%20Startpage.jpg)
+
+![Bokningssidan](https://github.com/Medieinstitutet/fed24d-grafiska-verktyg-panterkameleonterna/blob/main/assets/screenshot%20design/website%20screenshots/Printscreen%20-%20Desktop%20-%20Booking.jpg)
+
+## Kvalitetsgranskning av sidan 
+Detta gjordes med hjälp av valideringsverktyg och lighthouse analys 
+
+### Validering av HTML och CSS av startsidan
+![Validering HTML av startsidan](https://github.com/Medieinstitutet/fed24d-grafiska-verktyg-panterkameleonterna/blob/main/assets/screenshot%20design/website%20screenshots/Validering%20HTML%20-%20Startsidan.png)
+
+![Validering CSS av startsidan](https://github.com/Medieinstitutet/fed24d-grafiska-verktyg-panterkameleonterna/blob/main/assets/screenshot%20design/website%20screenshots/Validering%20CSS%20-%20Startsidan.png)
+
+Dessvärre hade vi lite problem med bokningssidan då sidan fungerade men tog man bort cache fick man 404 error. Detta resulterade i att vi inte fick fram en validering av den sidan. 
+
+### Lighthouse analys av mobile & desktop
+![Lighthouse analys av mobil](https://github.com/Medieinstitutet/fed24d-grafiska-verktyg-panterkameleonterna/blob/main/assets/screenshot%20design/website%20screenshots/Lighthouse%20analys%20-%20Startsidan%20-%20Mobil.png)
+
+![Lighthouse analys av desktop](https://github.com/Medieinstitutet/fed24d-grafiska-verktyg-panterkameleonterna/blob/main/assets/screenshot%20design/website%20screenshots/Lighthouse%20analys%20-%20Startsidan%20-%20Desktop.png)
+
+Dessvärre hade vi lite problem med bokningssidan då sidan fungerade men tog man bort cache fick man 404 error. Detta resulterade i att vi inte fick fram en lighthouse analys av den sidan. 
