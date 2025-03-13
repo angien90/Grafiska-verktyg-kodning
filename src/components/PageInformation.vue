@@ -1,7 +1,7 @@
 <script setup>
 import { computed } from "vue";
 import PrimaryButton from "./PrimaryButton.vue";
-import imagePath from "/src/assets/images/hus-startsian.webp";
+import imagePath from "/src/assets/images/hus-startsida.webp";
 
 const showExtraImages = computed(() => window.innerWidth >= 768);
 </script>
