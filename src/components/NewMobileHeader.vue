@@ -172,7 +172,7 @@ li{
 .mobile-menu li {
   padding: 10px 0;
   text-align: left;
-  font-size: pxtorem(18px);
+  font-size: 1.1rem;;
   color: $sand;
   width: 216px;
   height: 54px;

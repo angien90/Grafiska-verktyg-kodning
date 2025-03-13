@@ -171,7 +171,7 @@ form {
 
 .checkbox:checked::after {
   content: "✔";
-  font-size: pxtorem(18px);
+  font-size: 1.1rem;
   color: #333;
   position: absolute;
   top: 50%;
