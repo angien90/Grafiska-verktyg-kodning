@@ -12,7 +12,7 @@ import HomeView from "./views/HomeView.vue";
 nav {
   display: flex;
   gap: 15px;
-  font-size: pxtorem(18px);
+  font-size: 1.1rem;
 }
 
 h1 {
