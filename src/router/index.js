@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
-import HomeView from "../views/HomeView.vue";
-import BookingView from "../views/BookingView.vue";
+import HomeView from "@/views/HomeView.vue";
+import BookingView from "@/views/BookingView.vue";
 
 const routes = [
   {
@@ -16,7 +16,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL), // Använd BASE_URL för att hantera undersidor
+  history: createWebHistory("/fed24d-grafiska-verktyg-panterkameleonterna/")
   routes
 });
 
