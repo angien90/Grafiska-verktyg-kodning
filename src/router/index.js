@@ -1,23 +1,15 @@
 import { createRouter, createWebHistory } from "vue-router";
-import HomeView from "@/views/HomeView.vue";
-import BookingView from "@/views/BookingView.vue";
+import HomeView from "../views/HomeView.vue";
+import BookingView from "../views/BookingView.vue";
 
 const routes = [
-  {
-    path: "/",
-    redirect: { name: "HomeView" }
-  },
-  {
-    path: "/booking",
-    name: "BookingView",
-    component: BookingView,
-    props: true
-  }
+  { path: "/", component: HomeView },
+  { path: "/booking", component: BookingView },
 ];
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
-  routes
+  routes,
 });
 
 export default router;
