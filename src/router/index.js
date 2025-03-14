@@ -5,23 +5,18 @@ import BookingView from "../views/BookingView.vue";
 const routes = [
   {
     path: "/",
-    redirect: { name: "Home" }
+    redirect: { name: "HomeView" }
   },
   {
-    path: "/fed24d-grafiska-verktyg-panterkameleonterna/",
-    name: "Home",
-    component: HomeView
-  },
-  {
-    path: "/fed24d-grafiska-verktyg-panterkameleonterna/:queryParams(.*)",
-    name: "Booking",
+    path: "/booking",
+    name: "BookingView",
     component: BookingView,
     props: true
   }
 ];
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory(import.meta.env.BASE_URL), // Använd BASE_URL för att hantera undersidor
   routes
 });
 
