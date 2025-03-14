@@ -174,11 +174,17 @@ Detta gjordes med hjälp av valideringsverktyg och lighthouse analys
 
 ![Validering CSS av startsidan](https://github.com/Medieinstitutet/fed24d-grafiska-verktyg-panterkameleonterna/blob/main/assets/screenshot%20design/website%20screenshots/Validering%20CSS%20-%20Startsidan.png)
 
-Dessvärre hade vi lite problem med bokningssidan då sidan fungerade men tog man bort cache fick man 404 error. Detta resulterade i att vi inte fick fram en validering av den sidan. 
+### Validering av HTML och CSS av bokningssidan
+![Validering HTML av bokningssidan](https://github.com/Medieinstitutet/fed24d-grafiska-verktyg-panterkameleonterna/blob/main/assets/screenshot%20design/website%20screenshots/Validering%20-%20HTML%20-%20Booking.png)
 
-### Lighthouse analys av mobile & desktop
+![Validering CSS av bokningssidan](https://github.com/Medieinstitutet/fed24d-grafiska-verktyg-panterkameleonterna/blob/main/assets/screenshot%20design/website%20screenshots/Validering%20-%20CSS%20-%20Booking.png)
+
+### Lighthouse analys startsidan
 ![Lighthouse analys av mobil](https://github.com/Medieinstitutet/fed24d-grafiska-verktyg-panterkameleonterna/blob/main/assets/screenshot%20design/website%20screenshots/Lighthouse%20analys%20-%20Startsidan%20-%20Mobil.png)
 
 ![Lighthouse analys av desktop](https://github.com/Medieinstitutet/fed24d-grafiska-verktyg-panterkameleonterna/blob/main/assets/screenshot%20design/website%20screenshots/Lighthouse%20analys%20-%20Startsidan%20-%20Desktop.png)
 
-Dessvärre hade vi lite problem med bokningssidan då sidan fungerade men tog man bort cache fick man 404 error. Detta resulterade i att vi inte fick fram en lighthouse analys av den sidan. 
+### Lighthouse analys bokningssidan
+![Lighthouse analys av mobil](https://github.com/Medieinstitutet/fed24d-grafiska-verktyg-panterkameleonterna/blob/main/assets/screenshot%20design/website%20screenshots/Lighthouse%20analys%20-%20Mobil%20-%20Booking.png)
+
+![Lighthouse analys av desktop](https://github.com/Medieinstitutet/fed24d-grafiska-verktyg-panterkameleonterna/blob/main/assets/screenshot%20design/website%20screenshots/Lighthouse%20analys%20-%20Desktop%20-%20Booking.png)
