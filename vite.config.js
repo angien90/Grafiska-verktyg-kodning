@@ -2,9 +2,9 @@ import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import path from "path";
 
-export default defineConfig(({ mode }) => ({
+export default defineConfig({
+  base: "/fed24d-grafiska-verktyg-panterkameleonterna/",
   plugins: [vue()],
-  base: mode === "production" ? "/fed24d-grafiska-verktyg-panterkameleonterna/" : "/",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "src"),
