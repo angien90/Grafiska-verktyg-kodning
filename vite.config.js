@@ -17,4 +17,9 @@ export default defineConfig({
       },
     },
   },
+  module.exports = {
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/fed24d-grafiska-verktyg-panterkameleonterna/'
+    : '/'
+}
 });
