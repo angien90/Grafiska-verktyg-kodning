@@ -3,13 +3,26 @@ import HomeView from "../views/HomeView.vue";
 import BookingView from "../views/BookingView.vue";
 
 const routes = [
-  { path: "/", component: HomeView },
-  { path: "/booking", component: BookingView },
+  {
+    path: "/",
+    redirect: { name: "Home" }
+  },
+  {
+    path: "/fed24d-grafiska-verktyg-panterkameleonterna/",
+    name: "Home",
+    component: HomeView
+  },
+  {
+    path: "/fed24d-grafiska-verktyg-panterkameleonterna/:queryParams(.*)",
+    name: "Booking",
+    component: BookingView,
+    props: true
+  }
 ];
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
-  routes,
+  history: createWebHistory(),
+  routes
 });
 
 export default router;
